@@ -20,7 +20,7 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              {['Home', 'AdaptivEdge Method', 'Corporate Solutions', 'Personal Development', 'Shop', 'About', 'Contact'].map(item => <li key={item}>
+              {['Home', 'Corporate Solutions', 'Personal Development', 'Shop', 'About', 'Contact'].map(item => <li key={item}>
                   <Link to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200">
                     {item}
                   </Link>
