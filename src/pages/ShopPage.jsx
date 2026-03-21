@@ -78,7 +78,7 @@ const ShopPage = () => {
   return (
     <>
       <Helmet>
-        <title>Shop Digital Resources | AdaptivEdge</title>
+        <title>AdaptivEdge Shop</title>
         <meta name="description" content="Explore our collection of digital guides, handbooks, and toolkits designed to build operational resilience and strategic adaptability." />
       </Helmet>
 
@@ -95,10 +95,10 @@ const ShopPage = () => {
               className="max-w-3xl mx-auto"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-                Digital <span className="text-secondary">Resources</span>
+                AdaptivEdge <span className="text-secondary">Shop</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Practical frameworks, actionable guides, and toolkits designed to help you build clarity, move with intent, and perform at a higher level.
+                Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level.
               </p>
             </motion.div>
           </div>
