@@ -1,0 +1,141 @@
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { User, Target, Wrench, Briefcase, ArrowRight } from 'lucide-react';
+import Header from '@/components/Header.jsx';
+import Footer from '@/components/Footer.jsx';
+import { Button } from '@/components/ui/button';
+
+const PersonalDevelopmentPage = () => {
+  const services = [
+    {
+      id: 'coaching',
+      icon: User,
+      title: 'Executive Coaching',
+      description: 'One-on-one coaching for leaders focused on developing clear thinking, strategic adaptability, and confident decision-making in high-stakes environments. We work directly with you to identify blind spots and build robust mental models for leadership under pressure.',
+    },
+    {
+      id: 'training',
+      icon: Target,
+      title: 'Adaptability & Resilience Training',
+      description: 'Individual skill development programs that build mental frameworks for navigating uncertainty, managing stress, and maintaining performance during change. Learn to recognize shifting conditions early and pivot your approach without losing momentum.',
+    },
+    {
+      id: 'troubleshooting',
+      icon: Wrench,
+      title: 'Troubleshooting Frameworks',
+      description: 'Learn structured approaches to diagnosing problems, identifying root causes, and implementing effective solutions in complex technical and organizational systems. Move past reactive firefighting into systematic, confident problem resolution.',
+    },
+    {
+      id: 'performance',
+      icon: Briefcase,
+      title: 'Performance Strategies for Professionals',
+      description: 'Personalized coaching on maintaining peak performance, managing energy, and building sustainable routines while working across multiple locations, time zones, or unfamiliar environments. Optimize your personal operating system for the demands of modern professional life.',
+    },
+  ];
+
+  return (
+    <>
+      <Helmet>
+        <title>Personal Development | AdaptiVantage</title>
+        <meta name="description" content="Individual coaching and training programs for professionals committed to continuous growth, clear thinking, and strategic adaptability." />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col bg-transparent">
+        <Header />
+
+        {/* Hero Section */}
+        <section className="section-padding bg-card/20 backdrop-blur-sm border-b border-border/50">
+          <div className="container-custom text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-3xl mx-auto"
+            >
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
+                Personal <span className="text-secondary">Development</span>
+              </h1>
+              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+                Individual coaching and training programs for professionals committed to continuous growth, clear thinking, and strategic adaptability.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Services Grid Layout */}
+        <section className="section-padding bg-transparent">
+          <div className="container-custom">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {services.map((service, index) => (
+                <motion.div
+                  key={service.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="card-minimal p-8 flex flex-col h-full group"
+                >
+                  <div className="mb-6">
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary/10 text-secondary">
+                      <service.icon className="w-6 h-6" />
+                    </div>
+                  </div>
+                  <h2 className="text-2xl font-semibold mb-4 text-foreground">
+                    {service.title}
+                  </h2>
+                  <p className="text-base leading-relaxed text-muted-foreground mb-8 flex-1">
+                    {service.description}
+                  </p>
+                  <div className="mt-auto">
+                    <Button 
+                      asChild 
+                      variant="ghost"
+                      className="px-0 text-accent hover:text-accent/80 hover:bg-transparent group-hover:translate-x-1 transition-all duration-300"
+                    >
+                      <Link to="/contact">
+                        Start Your Journey
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="section-padding bg-card/20 backdrop-blur-sm border-t border-border/50">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-2xl mx-auto"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4 text-foreground">
+                Elevate your personal performance
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Take the first step toward mastering strategic adaptability and clear decision-making in your professional life.
+              </p>
+              <Button 
+                asChild 
+                className="button-primary px-8 py-6 text-base"
+              >
+                <Link to="/contact">Book an Intro Session</Link>
+              </Button>
+            </motion.div>
+          </div>
+        </section>
+
+        <Footer />
+      </div>
+    </>
+  );
+};
+
+export default PersonalDevelopmentPage;
