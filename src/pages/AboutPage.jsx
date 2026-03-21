@@ -7,16 +7,16 @@ import Footer from '@/components/Footer.jsx';
 const AboutPage = () => {
   const philosophyPoints = [{
     icon: Target,
-    title: 'Calm confidence',
-    description: 'We believe the best decisions come from a place of clarity, not panic. Our approach emphasizes building the mental frameworks and practical skills that enable calm, confident action even in high-pressure situations.'
+    title: 'Clarity',
+    description: 'The best decisions come from clarity, not pressure. We help build the mindset and frameworks needed to adapt quickly, stay focused, and execute with confidence—even in high-stakes situations.'
   }, {
     icon: Compass,
-    title: 'Practical problem-solving',
-    description: 'Theory without application is just conversation. We focus on actionable frameworks, real-world scenarios, and measurable outcomes that translate directly into improved performance.'
+    title: 'Execution',
+    description: 'Theory alone doesn’t create results. We focus on practical, actionable frameworks that translate directly into better decisions, stronger performance, and measurable outcomes.'
   }, {
     icon: Users,
-    title: 'Sustainable growth',
-    description: 'Quick fixes create dependency. We build capabilities that last—teaching people and teams to solve their own problems, adapt to new challenges, and continue growing long after our engagement ends.'
+    title: 'Sustainable Capability',
+    description: 'Quick fixes create dependency. We build lasting capability — equipping individuals and teams to solve problems, adapt to new challenges, and continue improving long after our work is done.'
   }];
   return <>
       <Helmet>
@@ -40,10 +40,10 @@ const AboutPage = () => {
             duration: 0.6
           }} className="max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-                About AdaptivEDGE
+                About AdaptivEdge
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                We help leaders and teams navigate uncertainty with calm confidence.
+                We help leaders and teams navigate uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge.
               </p>
             </motion.div>
           </div>
@@ -151,7 +151,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  We work with executives navigating transformation, teams operating across boundaries, and professionals building in fast-moving environments. Our clients share one thing in common: they understand that adaptation, execution, and an edge are what drive performance.
+                  We work with executives navigating transformation, teams operating across boundaries, and professionals building in fast-moving environments. Our clients share one thing in common: they understand that adaptation, execution, and a leading edge are what drive performance.
                 </p>
                 <p>
                   What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
