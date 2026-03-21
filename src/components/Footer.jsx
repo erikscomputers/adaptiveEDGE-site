@@ -9,7 +9,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-6">
             <Link to="/" className="inline-block">
-              <img src="https://horizons-cdn.hostinger.com/722d85e9-751b-47c1-82ce-4531bf39f811/0a879486412cf29f2eec40c52a4594ae.png" alt="AdaptiVantage Logo" className="h-10 w-auto" />
+              <img src="/logo.png" 
+  alt="AdaptivEdge Logo"  className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-[45ch]">
               Helping professionals and teams adapt quickly, execute the plan, and lead with an edge in uncertain environments.
