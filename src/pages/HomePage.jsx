@@ -11,37 +11,37 @@ const HomePage = () => {
   const valueProps = [{
     icon: Shield,
     title: 'Operational resilience',
-    description: 'Build systems and mindsets that withstand disruption, maintain performance under pressure, and recover quickly from setbacks.'
+    description: 'Build systems and mindsets that perform under pressure, adapt to disruption, and recover quickly from setbacks.'
   }, {
     icon: Zap,
     title: 'Strategic adaptability',
-    description: 'Develop the ability to recognize changing conditions early, adjust plans effectively, and capitalize on emerging opportunities.'
+    description: 'Recognize shifting conditions early, adjust your approach with intent, and capitalize on emerging opportunities before others do.'
   }];
   const methodSteps = [{
     number: '01',
     title: 'Observe',
-    description: 'Gather relevant information'
+    description: 'Gather relevant information and identify what matters.'
   }, {
     number: '02',
     title: 'Assess',
-    description: 'Analyze the situation'
+    description: 'Analyze the situation to understand context, constraints, and opportunity.'
   }, {
     number: '03',
     title: 'Adapt',
-    description: 'Adjust your approach'
+    description: 'Adjust your approach based on what you’ve learned.'
   }, {
     number: '04',
-    title: 'Act',
-    description: 'Execute with confidence'
+    title: 'Execute',
+    description: 'Act with clarity, precision, and confidence.'
   }, {
     number: '05',
-    title: 'Reflect',
-    description: 'Learn and improve'
+    title: 'Improve',
+    description: 'Reflect, refine, and strengthen your approach over time.'
   }];
   return <>
       <Helmet>
         <title>AdaptivEdge - Adapt quickly. Execute the plan. Lead with an edge.</title>
-        <meta name="description" content="Helping professionals and teams excel in uncertain environments through operational resilience, strategic adaptability, and clear decision-making." />
+        <meta name="description" content="We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -130,7 +130,7 @@ const HomePage = () => {
             }} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {valueProps.map((prop, index) => <ValuePropositionCard key={index} {...prop} />)}
                 <div className="sm:col-span-2">
-                  <ValuePropositionCard icon={Target} title="Clear decision-making" description="Master structured approaches to problem-solving that reduce uncertainty, minimize errors, and increase confidence in high-stakes situations." />
+                  <ValuePropositionCard icon={Target} title="Clear decision-making" description="Apply structured thinking to reduce uncertainty, improve judgment, and execute confidently in high-stakes situations." />
                 </div>
               </motion.div>
             </div>
