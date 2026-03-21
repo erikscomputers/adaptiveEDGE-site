@@ -12,7 +12,7 @@ const Footer = () => {
               <img src="https://horizons-cdn.hostinger.com/722d85e9-751b-47c1-82ce-4531bf39f811/0a879486412cf29f2eec40c52a4594ae.png" alt="AdaptiVantage Logo" className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-[45ch]">
-              Helping professionals and teams think clearly, adapt quickly, and perform confidently in uncertain environments.
+              Helping professionals and teams adapt quickly, execute the plan, and lead with an edge in uncertain environments.
             </p>
           </div>
 
@@ -20,7 +20,7 @@ const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold text-foreground mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              {['Home', 'Method', 'Corporate Solutions', 'Personal Development', 'Shop', 'About', 'Contact'].map(item => <li key={item}>
+              {['Home', 'AdaptivEdge Method', 'Corporate Solutions', 'Personal Development', 'Shop', 'About', 'Contact'].map(item => <li key={item}>
                   <Link to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200">
                     {item}
                   </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-secondary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (706) 750-7385</span>
               </li>
             </ul>
             <div className="flex space-x-4 mt-6">
