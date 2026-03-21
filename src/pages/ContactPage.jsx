@@ -17,8 +17,8 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: '+1 (706) 750-7385',
+      link: 'tel:+17067507385',
     },
     {
       icon: MapPin,
@@ -31,7 +31,7 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Schedule a Consultation | AdaptivEdge</title>
+        <title>Contact AdaptivEdge - Schedule a Consultation | AdaptivEdge</title>
         <meta name="description" content="Get in touch with AdaptivEdge to discuss corporate solutions, executive coaching, or team workshops. Schedule a consultation today." />
       </Helmet>
 
@@ -51,7 +51,7 @@ const ContactPage = () => {
                 Get in Touch
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Ready to build resilience and adaptability in your organization or career? Let's start a conversation.
+                Ready to build the ability to adapt quickly, execute a plan, and lead with an edge? Let’s start a conversation.
               </p>
             </motion.div>
           </div>
@@ -122,7 +122,7 @@ const ContactPage = () => {
                 <div className="card-minimal p-6 bg-muted/50">
                   <h3 className="text-lg font-semibold mb-3 text-foreground">Office hours</h3>
                   <div className="space-y-2 text-sm text-muted-foreground">
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM EST</p>
                     <p>Saturday - Sunday: Closed</p>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 pt-4 border-t border-border">
