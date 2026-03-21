@@ -197,8 +197,8 @@ const HomePage = () => {
             delay: 0.5
           }} className="text-center">
               <Button asChild className="button-secondary px-8 py-6 text-base">
-                <Link to="/method">
-                  Learn More About the Method
+                <Link to="/contact">
+                  Schedule A Workshop
                 </Link>
               </Button>
             </motion.div>
