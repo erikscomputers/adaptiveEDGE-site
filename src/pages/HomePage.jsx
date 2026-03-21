@@ -64,12 +64,12 @@ const HomePage = () => {
             ease: "easeOut"
           }} className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground tracking-tight">
-                Think Clearly.<br />
-                Adapt Quickly.<br />
-                <span className="text-accent">Perform Confidently.</span>
+                Adapt quickly.<br />
+                Execute the plan.<br />
+                <span className="text-accent">Lead with an edge.</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
-                We help professionals and teams excel in uncertain environments through proven frameworks for resilience, adaptability, and clear decision-making.
+                We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="button-primary px-8 py-6 text-base">
@@ -106,7 +106,7 @@ const HomePage = () => {
                   Master <span className="text-secondary">Operational Resilience</span>
                 </h2>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-                  In a world of constant disruption, survival isn't enough. You need the strategic adaptability to recognize changing conditions early, adjust plans effectively, and capitalize on emerging opportunities when others hesitate.
+                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, execute the plan, and lead with an edge — recognizing change early, adjusting with precision, and acting when it matters most.
                 </p>
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link to="/corporate-solutions">
@@ -152,10 +152,10 @@ const HomePage = () => {
             duration: 0.5
           }} className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4 text-foreground">
-                The AdaptivEDGE Method
+                The AdaptivEdge Method
               </h2>
               <p className="text-lg leading-relaxed text-muted-foreground max-w-[65ch] mx-auto">
-                A five-step framework designed to help you navigate complexity and uncertainty with confidence.
+                A structured framework to help you operate with clarity, move with intent, and build a lasting edge.
               </p>
             </motion.div>
 
