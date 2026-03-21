@@ -4,7 +4,6 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import ScrollToTop from '@/components/ScrollToTop.jsx';
 import HomePage from '@/pages/HomePage.jsx';
-import MethodPage from '@/pages/MethodPage.jsx';
 import CorporateSolutionsPage from '@/pages/CorporateSolutionsPage.jsx';
 import PersonalDevelopmentPage from '@/pages/PersonalDevelopmentPage.jsx';
 import AboutPage from '@/pages/AboutPage.jsx';
