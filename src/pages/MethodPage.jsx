@@ -41,8 +41,8 @@ const MethodPage = () => {
   }];
   return <>
       <Helmet>
-        <title>The AdaptiVantage Method - Five-Step Framework for Adaptability</title>
-        <meta name="description" content="Master the five-step AdaptiVantage Method: Observe, Assess, Adapt, Act, and Reflect. A proven framework for navigating complexity and uncertainty with confidence." />
+        <title>The AdaptivEdge Method - Five-Step Framework for Adaptability</title>
+        <meta name="description" content="Master the five-step AdaptivEdge Method: Observe, Assess, Adapt, Act, and Reflect. A proven framework for navigating complexity and uncertainty with confidence." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">

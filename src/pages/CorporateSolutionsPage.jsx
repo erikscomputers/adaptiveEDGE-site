@@ -38,7 +38,7 @@ const CorporateSolutionsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Corporate Solutions | AdaptiVantage</title>
+        <title>Corporate Solutions | AdaptivEdge</title>
         <meta name="description" content="Comprehensive programs designed to strengthen organizational resilience, adaptable hiring, and team performance in uncertain environments." />
       </Helmet>
 

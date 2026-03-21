@@ -65,8 +65,8 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Services - Corporate Solutions & Personal Development | AdaptiVantage</title>
-        <meta name="description" content="Explore AdaptiVantage services: operational resilience training, executive coaching, team workshops, and performance strategies for professionals and organizations." />
+        <title>Services - Corporate Solutions & Personal Development | AdaptivEdge</title>
+        <meta name="description" content="Explore AdaptivEdge services: operational resilience training, executive coaching, team workshops, and performance strategies for professionals and organizations." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col">

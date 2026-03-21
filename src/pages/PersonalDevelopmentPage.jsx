@@ -38,7 +38,7 @@ const PersonalDevelopmentPage = () => {
   return (
     <>
       <Helmet>
-        <title>Personal Development | AdaptiVantage</title>
+        <title>Personal Development | AdaptivEdge</title>
         <meta name="description" content="Individual coaching and training programs for professionals committed to continuous growth, clear thinking, and strategic adaptability." />
       </Helmet>
 

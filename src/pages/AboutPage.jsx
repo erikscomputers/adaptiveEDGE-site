@@ -68,13 +68,13 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  In a world of constant change and increasing complexity, the ability to think clearly, adapt quickly, and perform confidently is no longer optional—it is essential. Yet most professionals and organizations lack structured approaches to building these capabilities.
+                  In a world of constant change and increasing complexity, success depends on one thing: adaptation, execution, and an edge. Most individuals and organizations struggle to keep pace because they lack structured, repeatable systems for building these capabilities.
                 </p>
                 <p>
-                  AdaptivEDGE exists to close that gap. We provide practical frameworks, proven methodologies, and expert guidance that transform how individuals and teams respond to uncertainty. Our work is grounded in real-world application, not abstract theory.
+                  AdaptivEdge exists to change that. We provide practical frameworks, proven methodologies, and expert guidance that help individuals and teams respond to uncertainty with clarity and confidence. Our approach is grounded in real-world application — not abstract theory.
                 </p>
                 <p>
-                  We believe that resilience and adaptability are not innate traits—they are learnable skills. Through deliberate practice, structured thinking, and continuous reflection, anyone can develop the capacity to navigate complexity with confidence.
+                  We believe adaptability is not a fixed trait — it is a skill. Through deliberate practice, structured thinking, and continuous improvement, anyone can develop the ability to navigate complexity and consistently perform at a higher level.
                 </p>
               </div>
             </motion.div>
@@ -151,13 +151,13 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  We have worked with executives navigating organizational transformations, teams managing distributed operations across time zones, and professionals building careers in rapidly changing industries. Our clients share a common trait: they recognize that adaptability is a competitive advantage.
+                  We work with executives navigating transformation, teams operating across boundaries, and professionals building in fast-moving environments. Our clients share one thing in common: they understand that adaptation, execution, and an edge are what drive performance.
                 </p>
                 <p>
-                  What sets us apart is our commitment to practical application. We do not deliver generic advice or one-size-fits-all solutions. Instead, we work closely with you to understand your specific challenges, design tailored interventions, and measure real outcomes.
+                  What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
                 </p>
                 <p>
-                  Our goal is not to create dependency but to build capability. When our engagement ends, you should have the frameworks, skills, and confidence to continue adapting and improving on your own.
+                  Our goal is not to create dependency, but to build capability. When our work is complete, you should have the frameworks, skills, and confidence to continue improving and adapting on your own — sustaining your edge long after our engagement ends.
                 </p>
               </div>
             </motion.div>
