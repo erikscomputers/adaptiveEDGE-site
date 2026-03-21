@@ -40,7 +40,7 @@ const HomePage = () => {
   }];
   return <>
       <Helmet>
-        <title>AdaptiVantage - Think Clearly. Adapt Quickly. Perform Confidently.</title>
+        <title>AdaptivEdge - Adapt quickly. Execute the plan. Lead with an edge.</title>
         <meta name="description" content="Helping professionals and teams excel in uncertain environments through operational resilience, strategic adaptability, and clear decision-making." />
       </Helmet>
 

@@ -29,7 +29,7 @@ const Header = () => {
             <Link to="/" className="flex items-center space-x-2 group">
               <img 
                 src="https://horizons-cdn.hostinger.com/722d85e9-751b-47c1-82ce-4531bf39f811/0a879486412cf29f2eec40c52a4594ae.png" 
-                alt="AdaptiVantage Logo" 
+                alt="AdaptivEdge Logo" 
                 className="h-13 w-auto transition-opacity duration-200 group-hover:opacity-80"
               />
             </Link>
@@ -69,7 +69,7 @@ const Header = () => {
             <Link to="/" className="flex items-center space-x-2 group">
               <img 
                 src="https://horizons-cdn.hostinger.com/722d85e9-751b-47c1-82ce-4531bf39f811/0a879486412cf29f2eec40c52a4594ae.png" 
-                alt="AdaptiVantage Logo" 
+                alt="AdaptivEdge Logo" 
                 className="h-8 w-auto transition-opacity duration-200 group-hover:opacity-80"
               />
             </Link>

@@ -57,7 +57,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} AdaptiVantage. All rights reserved.
+            © {currentYear} AdaptivEdge. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200">

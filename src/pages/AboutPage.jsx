@@ -20,8 +20,8 @@ const AboutPage = () => {
   }];
   return <>
       <Helmet>
-        <title>About AdaptiVantage - Our Mission & Approach</title>
-        <meta name="description" content="Learn about AdaptiVantage's mission to help leaders and teams navigate uncertainty with calm confidence through practical problem-solving frameworks." />
+        <title>About AdaptivEdge - Our Mission & Approach</title>
+        <meta name="description" content="Learn about AdaptivEdge's mission to help leaders and teams navigate uncertainty with calm confidence through practical problem-solving frameworks." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">

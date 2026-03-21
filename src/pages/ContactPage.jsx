@@ -11,8 +11,8 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'info@adaptivantage.com',
-      link: 'mailto:info@adaptivantage.com',
+      value: 'info@AdaptivEdge.com',
+      link: 'mailto:info@AdaptivEdge.com',
     },
     {
       icon: Phone,
@@ -31,8 +31,8 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Schedule a Consultation | AdaptiVantage</title>
-        <meta name="description" content="Get in touch with AdaptiVantage to discuss corporate solutions, executive coaching, or team workshops. Schedule a consultation today." />
+        <title>Contact Us - Schedule a Consultation | AdaptivEdge</title>
+        <meta name="description" content="Get in touch with AdaptivEdge to discuss corporate solutions, executive coaching, or team workshops. Schedule a consultation today." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">

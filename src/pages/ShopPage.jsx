@@ -78,7 +78,7 @@ const ShopPage = () => {
   return (
     <>
       <Helmet>
-        <title>Shop Digital Resources | AdaptiVantage</title>
+        <title>Shop Digital Resources | AdaptivEdge</title>
         <meta name="description" content="Explore our collection of digital guides, handbooks, and toolkits designed to build operational resilience and strategic adaptability." />
       </Helmet>
 
