@@ -98,7 +98,7 @@ const ShopPage = () => {
                 Digital <span className="text-secondary">Resources</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Practical frameworks, actionable guides, and comprehensive toolkits to help you think clearly and perform confidently.
+                Practical frameworks, actionable guides, and toolkits designed to help you build clarity, move with intent, and perform at a higher level.
               </p>
             </motion.div>
           </div>
