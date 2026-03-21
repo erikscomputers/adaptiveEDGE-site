@@ -18,7 +18,6 @@ function App() {
         <Toaster position="top-right" />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/method" element={<MethodPage />} />
           <Route path="/corporate-solutions" element={<CorporateSolutionsPage />} />
           <Route path="/personal-development" element={<PersonalDevelopmentPage />} />
           <Route path="/about" element={<AboutPage />} />
