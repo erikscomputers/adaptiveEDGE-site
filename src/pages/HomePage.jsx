@@ -42,7 +42,7 @@ const HomePage = () => {
   }];
   return <>
       <Helmet>
-        <title>AdaptivEdge - Adapt quickly. Execute a plan. Lead with an edge.</title>
+        <title>AdaptivEdge - Adapt. Execute. Prevail.</title>
         <meta name="description" content="We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge." />
       </Helmet>
 
