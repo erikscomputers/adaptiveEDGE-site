@@ -62,7 +62,7 @@ const onSubmit = async (data) => {
     );
 
     setIsSubmitted(true);
-    toast.success('Message sent successfully! We will contact you soon.');
+    toast.success('Message sent successfully! We will contact you within 1-2 business days.');
     reset();
 
     setTimeout(() => setIsSubmitted(false), 5000);
@@ -108,7 +108,7 @@ const onSubmit = async (data) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="phone" className="text-foreground">Phone</Label>
+          <Label htmlFor="phone" className="text-foreground">Phone (Optional)</Label>
           <Input
             id="phone"
             type="tel"
@@ -122,7 +122,7 @@ const onSubmit = async (data) => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="company" className="text-foreground">Company</Label>
+          <Label htmlFor="company" className="text-foreground">Company (Optional)</Label>
           <Input
             id="company"
             type="text"
@@ -137,7 +137,7 @@ const onSubmit = async (data) => {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="serviceInterest" className="text-foreground">Service Interest</Label>
+        <Label htmlFor="serviceInterest" className="text-foreground">Service Interest (Optional)</Label>
         <Select onValueChange={(value) =>
   setValue('serviceInterest', value, { shouldValidate: true })
 }>
