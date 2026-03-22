@@ -12,26 +12,26 @@ const CorporateSolutionsPage = () => {
     {
       id: 'resilience',
       icon: Shield,
-      title: 'Operational Resilience Training',
-      description: 'Build organizational capacity to maintain performance under pressure, recover from disruptions, and adapt to changing conditions through structured training programs. We equip your teams with the mental frameworks needed to navigate high-stakes environments without losing operational tempo.',
+      title: 'Adaptive Operational Resilience Training',
+      description: 'Build teams that stay effective when conditions change. We train your people to adapt quickly, execute under pressure, and maintain momentum through disruption. Using structured scenarios and proven mental frameworks, your team learns to operate with clarity and control in high-stakes environments.',
     },
     {
       id: 'hiring',
       icon: Users,
-      title: 'Adaptable Hiring Strategy Consulting',
-      description: 'Design recruitment and talent development processes that identify candidates with strong adaptability skills. We help you build teams capable of thriving in dynamic environments by integrating resilience metrics into your core hiring and evaluation frameworks.',
+      title: 'Adaptive Hiring Strategy Consulting',
+      description: 'Hire for adaptability. Scale for performance. We design hiring and development systems that identify and grow individuals who think clearly, adjust fast, and execute consistently. Your organization gains a workforce built to perform in uncertainty — not just stability.',
     },
     {
       id: 'workshops',
       icon: Compass,
-      title: 'Scenario-Based Team Workshops',
-      description: 'Strengthen team decision-making and collaboration through immersive exercises that simulate real-world challenges. Our workshops expose your teams to controlled friction, building practical problem-solving capabilities and psychological safety under stress.',
+      title: 'Adaptive Scenario-Based Workshops',
+      description: 'Pressure-test your team before it matters. Through immersive, scenario-driven exercises, your teams face real-world challenges in controlled environments. The result: faster decisions, stronger alignment, and the confidence to execute when it counts.',
     },
     {
       id: 'remote',
       icon: Plane,
-      title: 'Travel & Remote Work Optimization',
-      description: 'Develop systems and practices that enable distributed teams and traveling professionals to maintain productivity, communication, and well-being across locations and time zones. We provide actionable protocols for asynchronous work and operational continuity.',
+      title: 'Adaptive Travel & Remote Work Optimization',
+      description: 'Operate effectively — anywhere. We build systems that allow teams to adapt across time zones, environments, and constraints without losing execution speed. From communication protocols to workflow design, your team stays aligned and productive wherever work happens.',
     },
   ];
 
@@ -39,7 +39,7 @@ const CorporateSolutionsPage = () => {
     <>
       <Helmet>
         <title>Corporate Solutions | AdaptivEdge</title>
-        <meta name="description" content="Comprehensive programs designed to strengthen organizational resilience, adaptable hiring, and team performance in uncertain environments." />
+        <meta name="description" content="Programs designed to help professionals and organizations adapt quickly, execute decisively, and lead with an edge—building resilient teams, optimized systems, and a culture of strategic adaptability." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -117,10 +117,10 @@ const CorporateSolutionsPage = () => {
               className="max-w-2xl mx-auto"
             >
               <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-4 text-foreground">
-                Ready to build a resilient organization?
+                Ready to build resilience and execute with an edge?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Contact us to discuss how we can tailor our corporate solutions to your specific operational challenges.
+                Whether you’re a professional or an organization, let’s discuss how our programs can be tailored to your unique challenges and help you adapt, perform, and lead.
               </p>
               <Button 
                 asChild 
