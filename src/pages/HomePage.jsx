@@ -66,8 +66,7 @@ const HomePage = () => {
             ease: "easeOut"
           }} className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground tracking-tight">
-                Adapt.<br />
-                Execute.<br />
+                Adapt. Execute.<br />
                 <span className="text-accent">Prevail.</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
