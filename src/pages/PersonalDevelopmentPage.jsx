@@ -59,7 +59,7 @@ const PersonalDevelopmentPage = () => {
                 Personal <span className="text-secondary">Development</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Individual coaching and training programs for professionals committed to adapting quickly, thinking clearly, and leading with an edge.
+                Individual coaching and training programs for adapting quickly, thinking clearly, and leading with an edge.
               </p>
             </motion.div>
           </div>
