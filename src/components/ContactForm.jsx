@@ -48,7 +48,7 @@ const onSubmit = async (data) => {
 
   try {
     await emailjs.send(
-      'service_0ur83xs',
+      'service_pxy4eot',
       'template_jik3ujn',
       {
         fullName: data.fullName,
