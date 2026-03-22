@@ -1,4 +1,5 @@
 
+import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -13,9 +14,18 @@ import { toast } from 'sonner';
 const formSchema = z.object({
   fullName: z.string().min(2, 'Full name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
-  phone: z.string().min(10, 'Please enter a valid phone number'),
-  company: z.string().min(2, 'Company name must be at least 2 characters'),
-  serviceInterest: z.string().min(1, 'Please select a service interest'),
+
+  phone: z
+    .string()
+    .optional()
+    .refine((val) => !val || /^\+?[0-9\s\-()]{10,}$/.test(val), {
+      message: 'Enter a valid phone number',
+    }),
+
+  company: z.string().optional(),
+
+  serviceInterest: z.string().optional(),
+
   message: z.string().min(10, 'Message must be at least 10 characters'),
 });
 
@@ -33,33 +43,36 @@ const ContactForm = () => {
     resolver: zodResolver(formSchema),
   });
 
-  const onSubmit = async (data) => {
-    setIsSubmitting(true);
+const onSubmit = async (data) => {
+  setIsSubmitting(true);
 
-    try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+  try {
+    await emailjs.send(
+      'service_0ur83xs',
+      'template_jik3ujn',
+      {
+        fullName: data.fullName,
+        email: data.email,
+        phone: data.phone || 'N/A',
+        company: data.company || 'N/A',
+        serviceInterest: data.serviceInterest || 'N/A',
+        message: data.message,
+      },
+      '_levg7_poecnFTHoB'
+    );
 
-      // Store in localStorage
-      const submissions = JSON.parse(localStorage.getItem('contactSubmissions') || '[]');
-      submissions.push({
-        ...data,
-        timestamp: new Date().toISOString(),
-      });
-      localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
+    setIsSubmitted(true);
+    toast.success('Message sent successfully! We will contact you soon.');
+    reset();
 
-      setIsSubmitted(true);
-      toast.success('Thank you for your inquiry. We will contact you within 1-2 business days.');
-      reset();
-
-      // Reset success message after 5 seconds
-      setTimeout(() => setIsSubmitted(false), 5000);
-    } catch (error) {
-      toast.error('Failed to submit form. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    setTimeout(() => setIsSubmitted(false), 5000);
+  } catch (error) {
+    console.error(error);
+    toast.error('Failed to send message. Please try again.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -125,7 +138,9 @@ const ContactForm = () => {
 
       <div className="space-y-2">
         <Label htmlFor="serviceInterest" className="text-foreground">Service Interest</Label>
-        <Select onValueChange={(value) => setValue('serviceInterest', value)}>
+        <Select onValueChange={(value) =>
+  setValue('serviceInterest', value, { shouldValidate: true })
+}>
           <SelectTrigger id="serviceInterest" className="bg-input text-foreground border-border focus:ring-secondary rounded-lg">
             <SelectValue placeholder="Select a service" />
           </SelectTrigger>
