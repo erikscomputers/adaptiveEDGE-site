@@ -6,6 +6,7 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import BackToTop from '@/components/BackToTop.jsx';
 
 const ShopPage = () => {
   const products = [
@@ -154,6 +155,7 @@ const ShopPage = () => {
         </section>
 
         <Footer />
+        <BackToTop />
       </div>
     </>
   );
