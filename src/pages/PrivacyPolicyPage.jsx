@@ -20,7 +20,7 @@ const PrivacyPolicyPage = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="section-padding bg-card/20 backdrop-blur-sm border-b border-border/50">
+        <section className="py-6 md:py-10 bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="container-custom text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}

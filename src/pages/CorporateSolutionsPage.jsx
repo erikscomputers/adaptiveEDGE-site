@@ -108,7 +108,7 @@ const CorporateSolutionsPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="section-padding bg-card/20 backdrop-blur-sm border-t border-border/50">
+        <section className="py-6 md:py-10 bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
