@@ -31,7 +31,7 @@ const PersonalDevelopmentPage = () => {
     {
       id: 'performance',
       icon: Briefcase,
-      title: 'Performance Strategies for Professionals',
+      title: 'Strategies for Traveling Professionals',
       description: 'Personalized coaching on maintaining peak performance, managing energy, and building sustainable routines—whether you’re working across multiple locations, time zones, or unfamiliar environments. Optimize your personal operating system for modern professional demands.',
     },
   ];
