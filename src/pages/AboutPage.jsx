@@ -43,7 +43,7 @@ const AboutPage = () => {
   <span className="text-secondary">About</span> AdaptivEdge
 </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                We help leaders and teams navigate uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge.
+                We help leaders and teams navigate uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge.
               </p>
             </motion.div>
           </div>

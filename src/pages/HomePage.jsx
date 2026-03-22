@@ -41,7 +41,7 @@ const HomePage = () => {
   return <>
       <Helmet>
         <title>AdaptivEdge - Adapt quickly. Execute a plan. Lead with an edge.</title>
-        <meta name="description" content="We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge." />
+        <meta name="description" content="We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -101,7 +101,7 @@ const HomePage = () => {
                   Master <span className="text-secondary">Operational Resilience</span>
                 </h2>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, execute the plan, and lead with an edge — recognizing change early, adjusting with precision, and acting when it matters most.
+                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, execute a plan, and lead with an edge — recognizing change early, adjusting with precision, and acting when it matters most.
                 </p>
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link to="/corporate-solutions">
