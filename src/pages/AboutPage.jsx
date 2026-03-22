@@ -30,7 +30,7 @@ const AboutPage = () => {
         <Header />
 
         {/* Hero Section */}
-        <section className="section-padding bg-card/20 backdrop-blur-sm border-b border-border/50">
+        <section className="py-8 md:py-12 bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="container-custom text-center">
             <motion.div initial={{
             opacity: 0,
