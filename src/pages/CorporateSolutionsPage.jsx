@@ -6,6 +6,7 @@ import { Shield, Users, Compass, Plane, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
+import BackToTop from '@/components/BackToTop.jsx';
 
 const CorporateSolutionsPage = () => {
   const services = [
@@ -133,6 +134,7 @@ const CorporateSolutionsPage = () => {
         </section>
 
         <Footer />
+        <BackToTop />
       </div>
     </>
   );

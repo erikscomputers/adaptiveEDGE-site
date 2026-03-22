@@ -7,6 +7,8 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ValuePropositionCard from '@/components/ValuePropositionCard.jsx';
 import { Button } from '@/components/ui/button';
+import BackToTop from '@/components/BackToTop.jsx';
+
 const HomePage = () => {
   const valueProps = [{
     icon: Shield,
@@ -201,6 +203,7 @@ const HomePage = () => {
         </section>
 
         <Footer />
+        <BackToTop />
       </div>
     </>;
 };

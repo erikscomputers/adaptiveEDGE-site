@@ -5,6 +5,7 @@ import { Target, Compass, Users } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BackToTop from '@/components/BackToTop.jsx';
+
 const AboutPage = () => {
   const philosophyPoints = [{
     icon: Target,

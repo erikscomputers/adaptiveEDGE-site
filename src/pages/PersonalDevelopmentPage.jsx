@@ -6,6 +6,7 @@ import { User, Target, Wrench, Briefcase, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
+import BackToTop from '@/components/BackToTop.jsx';
 
 const PersonalDevelopmentPage = () => {
   const services = [
@@ -133,6 +134,7 @@ const PersonalDevelopmentPage = () => {
         </section>
 
         <Footer />
+        <BackToTop />
       </div>
     </>
   );
