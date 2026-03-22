@@ -153,7 +153,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  We work with executives navigating transformation, teams operating across boundaries, and professionals building in fast-moving environments. Our clients share one thing in common: they understand that adaptation, execution, and a leading edge are what drive performance.
+                  We work with teams operating across boundaries, professionals building in fast-moving environments, and individuals trying to improve their lives. Our clients share one thing in common: they understand that adaptation, execution, and a leading edge are what drive performance.
                 </p>
                 <p>
                   What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
