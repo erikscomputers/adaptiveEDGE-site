@@ -170,7 +170,7 @@ const ContactForm = () => {
         className="w-full button-primary py-6 text-base"
         disabled={isSubmitting}
       >
-        {isSubmitting ? 'Submitting...' : 'Submit Inquiry'}
+        {isSubmitting ? 'Submitting...' : 'Submit'}
       </Button>
     </form>
   );
