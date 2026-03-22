@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Target, Compass, Users } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import BackToTop from '@/components/BackToTop.jsx';
 const AboutPage = () => {
   const philosophyPoints = [{
     icon: Target,
@@ -68,7 +69,7 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  In a world of constant change and increasing complexity, success depends on one thing: adaptation, execution, and an edge. Most individuals and organizations struggle to keep pace because they lack structured, repeatable systems for building these capabilities.
+                  In a world of constant change and increasing complexity, success depends on one thing: adaptation, execution, and a leading edge. Most individuals and organizations struggle to keep pace because they lack structured, repeatable systems for building these capabilities.
                 </p>
                 <p>
                   AdaptivEdge exists to change that. We provide practical frameworks, proven methodologies, and expert guidance that help individuals and teams respond to uncertainty with clarity and confidence. Our approach is grounded in real-world application — not abstract theory.
@@ -165,6 +166,7 @@ const AboutPage = () => {
         </section>
 
         <Footer />
+        <BackToTop />
       </div>
     </>;
 };
