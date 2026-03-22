@@ -49,7 +49,7 @@ const ContactForm = () => {
       localStorage.setItem('contactSubmissions', JSON.stringify(submissions));
 
       setIsSubmitted(true);
-      toast.success('Thank you for your inquiry. We will contact you shortly.');
+      toast.success('Thank you for your inquiry. We will contact you within 1-2 business days.');
       reset();
 
       // Reset success message after 5 seconds
@@ -131,7 +131,10 @@ const ContactForm = () => {
           </SelectTrigger>
           <SelectContent className="bg-popover border-border">
             <SelectItem value="corporate">Corporate Solutions</SelectItem>
-            <SelectItem value="coaching">Executive Coaching</SelectItem>
+            <SelectItem value="personal development">Personal Development</SelectItem>
+            <SelectItem value="services">Services</SelectItem>
+            <SelectItem value="products">Products</SelectItem>
+            <SelectItem value="courses">Courses</SelectItem>
             <SelectItem value="other">Other</SelectItem>
           </SelectContent>
         </Select>
