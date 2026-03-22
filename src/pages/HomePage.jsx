@@ -40,7 +40,7 @@ const HomePage = () => {
   }];
   return <>
       <Helmet>
-        <title>AdaptivEdge - Adapt quickly. Execute the plan. Lead with an edge.</title>
+        <title>AdaptivEdge - Adapt quickly. Execute a plan. Lead with an edge.</title>
         <meta name="description" content="We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge." />
       </Helmet>
 
@@ -65,19 +65,14 @@ const HomePage = () => {
           }} className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground tracking-tight">
                 Adapt quickly.<br />
-                Execute the plan.<br />
+                Execute a plan.<br />
                 <span className="text-accent">Lead with an edge.</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
-                We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge.
+                We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button asChild size="lg" className="button-primary px-8 py-6 text-base">
-                  <Link to="/method">
-                    Explore Our Approach
-                  </Link>
-                </Button>
-                <Button asChild size="lg" variant="outline" className="bg-background/40 backdrop-blur-sm border-border text-foreground hover:bg-muted/60 hover:text-foreground transition-colors duration-200 rounded-lg px-8 py-6 text-base">
+                <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
                   <Link to="/contact">
                     Contact Us
                   </Link>

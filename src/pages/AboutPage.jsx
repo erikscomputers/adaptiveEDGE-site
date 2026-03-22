@@ -40,8 +40,8 @@ const AboutPage = () => {
             duration: 0.6
           }} className="max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-                About AdaptivEdge
-              </h1>
+  <span className="text-secondary">About</span> AdaptivEdge
+</h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
                 We help leaders and teams navigate uncertainty by building the ability to adapt quickly, execute the plan, and lead with an edge.
               </p>
