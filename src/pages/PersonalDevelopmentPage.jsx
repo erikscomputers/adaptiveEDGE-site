@@ -13,25 +13,25 @@ const PersonalDevelopmentPage = () => {
       id: 'coaching',
       icon: User,
       title: 'Executive Coaching',
-      description: 'One-on-one coaching for leaders focused on developing clear thinking, strategic adaptability, and confident decision-making in high-stakes environments. We work directly with you to identify blind spots and build robust mental models for leadership under pressure.',
+      description: 'One-on-one coaching for leaders focused on clear thinking, confident decision-making, and strategic adaptability in high-stakes environments. Work directly with an expert to identify blind spots and build mental models for leading under pressure.',
     },
     {
       id: 'training',
       icon: Target,
       title: 'Adaptability & Resilience Training',
-      description: 'Individual skill development programs that build mental frameworks for navigating uncertainty, managing stress, and maintaining performance during change. Learn to recognize shifting conditions early and pivot your approach without losing momentum.',
+      description: 'Develop the skills to navigate uncertainty, manage stress, and maintain peak performance during change. Learn to anticipate shifting conditions and pivot decisively without losing momentum.',
     },
     {
       id: 'troubleshooting',
       icon: Wrench,
       title: 'Troubleshooting Frameworks',
-      description: 'Learn structured approaches to diagnosing problems, identifying root causes, and implementing effective solutions in complex technical and organizational systems. Move past reactive firefighting into systematic, confident problem resolution.',
+      description: 'Master structured approaches to diagnose problems, identify root causes, and implement effective solutions in complex systems. Move beyond reactive firefighting into confident, systematic problem-solving.',
     },
     {
       id: 'performance',
       icon: Briefcase,
       title: 'Performance Strategies for Professionals',
-      description: 'Personalized coaching on maintaining peak performance, managing energy, and building sustainable routines while working across multiple locations, time zones, or unfamiliar environments. Optimize your personal operating system for the demands of modern professional life.',
+      description: 'Personalized coaching on maintaining peak performance, managing energy, and building sustainable routines—whether you’re working across multiple locations, time zones, or unfamiliar environments. Optimize your personal operating system for modern professional demands.',
     },
   ];
 
@@ -58,7 +58,7 @@ const PersonalDevelopmentPage = () => {
                 Personal <span className="text-secondary">Development</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Individual coaching and training programs for professionals committed to continuous growth, clear thinking, and strategic adaptability.
+                Individual coaching and training programs for professionals committed to adapting quickly, thinking clearly, and leading with an edge.
               </p>
             </motion.div>
           </div>
@@ -120,7 +120,7 @@ const PersonalDevelopmentPage = () => {
                 Elevate your personal performance
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Take the first step toward mastering strategic adaptability and clear decision-making in your professional life.
+                Take the first step toward strategic adaptability, clear decision-making, and high-impact professional growth.
               </p>
               <Button 
                 asChild 
