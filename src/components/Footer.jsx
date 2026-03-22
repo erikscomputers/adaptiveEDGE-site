@@ -61,9 +61,12 @@ const Footer = () => {
             © {currentYear} AdaptivEdge. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200">
-              Privacy Policy
-            </a>
+            <Link 
+  to="/privacy-policy" 
+  className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200"
+>
+  Privacy Policy
+</Link>
             <a href="#" className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200">
               Terms of Service
             </a>

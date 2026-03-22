@@ -126,7 +126,7 @@ const ContactPage = () => {
                     <p>Saturday - Sunday: Closed</p>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 pt-4 border-t border-border">
-                    We typically respond to inquiries within 24 hours during business days.
+                    We will get back to you in 1-2 business days.
                   </p>
                 </div>
               </motion.div>
