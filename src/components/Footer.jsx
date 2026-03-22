@@ -13,7 +13,7 @@ const Footer = () => {
   alt="AdaptivEdge Logo"  className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-[45ch]">
-              Helping professionals adapt quickly, execute a plan, and lead with an edge in uncertain environments.
+              Helping you adapt quickly, execute a plan, and lead with an edge in uncertain environments.
             </p>
           </div>
 
