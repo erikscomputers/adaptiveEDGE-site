@@ -66,12 +66,12 @@ const HomePage = () => {
             ease: "easeOut"
           }} className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground tracking-tight">
-                Adapt quickly.<br />
-                Execute a plan.<br />
-                <span className="text-accent">Lead with an edge.</span>
+                Adapt.<br />
+                Execute.<br />
+                <span className="text-accent">Prevail.</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
-                We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge.
+                Helping you excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
