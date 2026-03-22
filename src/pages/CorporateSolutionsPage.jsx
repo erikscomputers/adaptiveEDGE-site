@@ -12,7 +12,7 @@ const CorporateSolutionsPage = () => {
     {
       id: 'resilience',
       icon: Shield,
-      title: 'Adaptive Operational Resilience Training',
+      title: 'Operational Resilience Training',
       description: 'Build teams that stay effective when conditions change. We train your people to adapt quickly, execute under pressure, and maintain momentum through disruption. Using structured scenarios and proven mental frameworks, your team learns to operate with clarity and control in high-stakes environments.',
     },
     {
@@ -24,13 +24,13 @@ const CorporateSolutionsPage = () => {
     {
       id: 'workshops',
       icon: Compass,
-      title: 'Adaptive Scenario-Based Workshops',
+      title: 'Scenario-Based Workshops',
       description: 'Pressure-test your team before it matters. Through immersive, scenario-driven exercises, your teams face real-world challenges in controlled environments. The result: faster decisions, stronger alignment, and the confidence to execute when it counts.',
     },
     {
       id: 'remote',
       icon: Plane,
-      title: 'Adaptive Travel & Remote Work Optimization',
+      title: 'Travel & Remote Work Optimization',
       description: 'Operate effectively — anywhere. We build systems that allow teams to adapt across time zones, environments, and constraints without losing execution speed. From communication protocols to workflow design, your team stays aligned and productive wherever work happens.',
     },
   ];

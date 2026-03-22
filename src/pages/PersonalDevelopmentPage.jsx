@@ -12,8 +12,8 @@ const PersonalDevelopmentPage = () => {
     {
       id: 'coaching',
       icon: User,
-      title: 'Executive Coaching',
-      description: 'One-on-one coaching for leaders focused on clear thinking, confident decision-making, and strategic adaptability in high-stakes environments. Work directly with an expert to identify blind spots and build mental models for leading under pressure.',
+      title: 'Coaching',
+      description: 'One-on-one coaching for individuals focused on clear thinking, confident decision-making, and strategic adaptability in high-stakes environments. Identify blind spots and build mental models for leading under pressure.',
     },
     {
       id: 'training',
