@@ -17,19 +17,21 @@ export default function BackToTop() {
   };
 
   return (
-    <button
-      onClick={scrollToTop}
-      className={`
-        fixed bottom-6 right-6 z-50
-        p-3 rounded-full shadow-lg
-        bg-black text-white
-        transition-all duration-300
-        hover:bg-gray-800 hover:-translate-y-1
-        ${visible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}
-      `}
-      aria-label="Back to top"
-    >
-      ↑
-    </button>
+<button
+  onClick={scrollToTop}
+  className={`
+    fixed bottom-6 right-6 z-50
+    flex items-center gap-2
+    px-4 py-2 rounded-full shadow-lg
+    bg-black text-white text-sm font-medium
+    transition-all duration-300
+    hover:bg-gray-800 hover:-translate-y-1
+    ${visible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}
+  `}
+  aria-label="Back to the top"
+>
+  <span>↑</span>
+  Back to the top
+</button>
   );
 }
