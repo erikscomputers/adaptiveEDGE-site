@@ -67,10 +67,11 @@ const Footer = () => {
 >
   Privacy Policy
 </Link>
-            <Link to="/terms-of-service"> 
+            <Link 
+  to="/terms-of-service" 
   className="text-sm text-muted-foreground hover:text-secondary transition-colors duration-200"
 >
-  Terms of Service
+  Terms Of Service
 </Link>
           </div>
         </div>
