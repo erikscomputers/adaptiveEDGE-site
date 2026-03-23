@@ -5,6 +5,7 @@ import { Target, Compass, Users } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BackToTop from '@/components/BackToTop.jsx';
+import { Button } from '@/components/ui/button';
 
 const AboutPage = () => {
   const philosophyPoints = [{
@@ -161,6 +162,12 @@ const AboutPage = () => {
                 <p>
                   Our goal is not to create dependency but to build capability. When our work is complete, you’ll have the frameworks, skills, and confidence to adapt, strategize, and prevail on your own — sustaining your edge long after our engagement ends.
                 </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
+                  <Link to="/contact">
+                    Contact Us
+                  </Link>
+                </Button>
               </div>
             </motion.div>
           </div>
