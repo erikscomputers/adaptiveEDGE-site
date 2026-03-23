@@ -7,7 +7,6 @@ import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BackToTop from '@/components/BackToTop.jsx';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 
 import { products } from '@/data/products';
 
@@ -39,43 +38,28 @@ const ProductPage = () => {
       <div className="min-h-screen flex flex-col bg-transparent">
         <Header />
 
-        {/* Hero / Header */}
-        <section className="py-6 md:py-10 bg-card/20 backdrop-blur-sm border-b border-border/50">
-          <div className="container-custom">
+        {/* Hero Section - same height as ShopPage */}
+        <section className="min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh] flex items-center justify-center bg-card/20 backdrop-blur-sm border-b border-border/50">
+          <div className="container-custom text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-4xl mx-auto"
+              className="max-w-3xl mx-auto"
             >
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
+                {product.title}
+              </h1>
+              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+                {product.description}
+              </p>
               <Button
                 variant="ghost"
                 onClick={() => navigate(-1)}
-                className="mb-6"
+                className="mt-8"
               >
-                ← Back
+                ← Back to Shop
               </Button>
-
-              <div className="flex items-center gap-4 mb-4">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-muted text-secondary">
-                  <product.icon className="h-6 w-6" />
-                </div>
-
-                <Badge
-                  variant="outline"
-                  className="bg-transparent border-border text-muted-foreground text-xs font-medium rounded-md"
-                >
-                  {product.category}
-                </Badge>
-              </div>
-
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground mb-4">
-                {product.title}
-              </h1>
-
-              <p className="text-lg text-muted-foreground max-w-2xl">
-                {product.description}
-              </p>
             </motion.div>
           </div>
         </section>
@@ -91,7 +75,7 @@ const ProductPage = () => {
             >
               <div className="card-minimal p-8 md:p-10">
 
-                {/* Placeholder for deeper content */}
+                {/* Optional additional description */}
                 <div className="mb-10">
                   <h2 className="text-xl font-semibold text-foreground mb-4">
                     What You’ll Learn
