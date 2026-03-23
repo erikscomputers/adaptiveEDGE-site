@@ -31,8 +31,8 @@ const ContactPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact AdaptivEdge - Schedule a Consultation | AdaptivEdge</title>
-        <meta name="description" content="Get in touch with AdaptivEdge to discuss corporate solutions, executive coaching, or team workshops. Schedule a consultation today." />
+        <title>Contact AdaptivEdge</title>
+        <meta name="description" content="Get in touch with AdaptivEdge to unlock corporate solutions, coaching, and team workshops that help you adapt, strategize, and prevail in any environment." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -51,7 +51,7 @@ const ContactPage = () => {
                 Get in Touch
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Ready to build the ability to adapt quickly, execute a plan, and lead with an edge? Let’s start a conversation.
+                Empower yourself to adapt quickly, think strategically, and prevail — building the skills to stay ahead in any situation.
               </p>
             </motion.div>
           </div>
