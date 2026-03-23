@@ -9,6 +9,7 @@ export const products = [
     category: 'Guide',
     price: 9.87,
     icon: BookOpen,
+    image: '/images/product images/adaptability-playbook.jpg',
   },
   {
     id: 2,

@@ -1,0 +1,30 @@
+{
+  id: 9,
+  slug: 'your-product-name',
+  title: 'Your Product Name',
+  description: 'Your description...',
+  category: 'Guide',
+  price: 19.99,
+  icon: BookOpen,
+  image: '/images/product images/adaptability-playbook.jpg',
+}
+
+
+
+A premium, minimal 3D book cover titled “The Adaptability Playbook”. The book is shown as a sleek modern hardcover with subtle matte texture and soft shadowing. The design is clean, corporate, and strategic — inspired by high-end consulting and modern digital product brands.
+
+The cover features abstract geometric shapes representing adaptability, flexibility, and systems thinking (flowing lines, modular grids, or shifting blocks). No clutter, no illustrations of people.
+
+Color palette: deep navy, charcoal, and subtle accents of electric blue or muted teal.
+
+The title “The Adaptability Playbook” is clearly visible in elegant modern sans-serif typography, centered and balanced.
+
+The book is angled slightly in a 3D perspective (not flat), floating or resting on a soft neutral gradient background.
+
+Lighting: soft studio lighting with subtle reflections and gentle shadows for depth.
+
+Style: ultra-clean, professional, minimal, high-end business strategy aesthetic, similar to consulting reports or tech SaaS branding.
+
+Composition: centered, square or near-square framing optimized for product thumbnails (1:1 or 4:5 ratio). Leave enough padding around the book for cropping.
+
+Output format: high-resolution JPG, crisp edges, no watermark, no mockup text besides the title.

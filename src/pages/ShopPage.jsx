@@ -62,6 +62,15 @@ const ShopPage = () => {
                   className="h-full"
                 >
                   <div className="card-minimal p-6 h-full flex flex-col group">
+                    {product.image && (
+  <div className="mb-4 overflow-hidden rounded-lg">
+    <img
+      src={product.image}
+      alt={product.title}
+      className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+    />
+  </div>
+)}
                     <div className="flex justify-between items-start mb-6">
                       <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-muted text-secondary group-hover:bg-secondary/10 transition-colors duration-300">
                         <product.icon className="h-5 w-5" />
