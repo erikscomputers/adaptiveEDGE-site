@@ -82,11 +82,11 @@ const ShopPage = () => {
                       {product.description}
                     </p>
 
-                    {/* ✅ UPDATED SECTION (price removed, button changed) */}
+                    {/* ✅ UPDATED SECTION */}
                     <div className="mt-auto pt-6 border-t border-border">
                       <Button
                         className="w-full button-primary group/btn"
-                        onClick={() => navigate(`/product/${product.id}`)}
+                        onClick={() => navigate(`/product/${product.slug}`)}
                       >
                         Learn More
                       </Button>
