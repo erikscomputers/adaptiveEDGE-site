@@ -164,7 +164,7 @@ const AboutPage = () => {
         </p>
       </div> {/* ✅ THIS WAS MISSING */}
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 border-t border-border/30 mt-10">
         <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
           <Link to="/contact">
             Contact Us
