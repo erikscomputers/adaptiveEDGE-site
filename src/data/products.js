@@ -65,7 +65,7 @@ export const products = [
     id: 4,
     slug: 'remote-work-optimization-manual',
     title: 'Remote Work Optimization Manual',
-    description: 'Systems and practices for reomte workers to maintain peak productivity and communication.',
+    description: 'Systems and practices for remote workers to maintain peak productivity and communication.',
     category: 'Manual',
     price: 24.87,
     icon: FileText,
