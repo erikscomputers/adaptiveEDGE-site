@@ -38,35 +38,38 @@ const product = products.find((p) => p.slug === slug);
       <div className="min-h-screen flex flex-col bg-transparent">
         <Header />
 
-        {/* Content Section ONLY */}
-        <section className="pt-10 md:pt-14 pb-20 bg-transparent">
-          <div className="container-custom">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="max-w-4xl mx-auto"
-            >
-              <div className="card-minimal p-8 md:p-10 text-center">
-                {product.image && (
-  <div className="mb-8 flex justify-center">
-    <img
-      src={product.image}
-      alt={product.title}
-      className="w-full max-w-md rounded-lg shadow-xl ring-1 ring-border/20 object-cover"
-    />
-  </div>
-)}
+    {/* Content Section ONLY */}
+<section className="pt-10 md:pt-14 pb-20 bg-transparent">
+  <div className="container-custom">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="max-w-4xl mx-auto"
+    >
+      <div className="card-minimal p-8 md:p-10 text-center">
 
-                {/* Title */}
-                <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  {product.title}
-                </h1>
+        {/* Title */}
+        <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          {product.title}
+        </h1>
 
-                {/* Description */}
-                <p className="text-muted-foreground leading-relaxed mb-10">
-                  {product.description}
-                </p>
+        {/* Description */}
+        <p className="text-muted-foreground leading-relaxed mb-10">
+          {product.description}
+        </p>
+
+        {/* Image (moved BELOW text) */}
+        {product.image && (
+          <div className="mb-8 flex justify-center">
+            <img
+              src={product.image}
+              alt={product.title}
+              className="w-full max-w-md rounded-lg shadow-xl ring-1 ring-border/20 object-cover"
+            />
+          </div>
+        )}
+
 
                 {/* Optional additional description */}
               {product.learnPoints && (
