@@ -43,7 +43,7 @@ const HomePage = () => {
   return <>
       <Helmet>
         <title>AdaptivEdge - Adapt. Strategize. Prevail.</title>
-        <meta name="description" content="Helping you excel in uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge." />
+        <meta name="description" content="Helping you excel in uncertainty by developing the skills to adapt, strategize, and prevail — so you stay ahead of the curve." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -70,7 +70,7 @@ const HomePage = () => {
                 <span className="text-accent">Prevail.</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
-                Helping you excel in uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge.
+                Helping you excel in uncertainty by developing the skills to adapt, strategize, and prevail — so you stay ahead of the curve.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
