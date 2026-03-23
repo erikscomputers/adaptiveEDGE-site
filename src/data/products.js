@@ -2,15 +2,25 @@ import { BookOpen, FileText, Briefcase, ShieldAlert, Users, Plane, Target } from
 
 export const products = [
   {
-    id: 1,
-    slug: 'adaptability-playbook',
-    title: 'The Adaptability Playbook',
-    description: 'Core frameworks for recognizing changing conditions and adjusting plans effectively in real-time.',
-    category: 'Guide',
-    price: 9.87,
-    icon: BookOpen,
-    image: '/product images/adaptability-playbook.jpg',
-  },
+  id: 1,
+  slug: 'adaptability-playbook',
+  title: 'The Adaptability Playbook',
+  description: 'Core frameworks for recognizing changing conditions and adjusting plans effectively in real-time.',
+  category: 'Guide',
+  price: 9.87,
+  icon: BookOpen,
+  image: '/product images/adaptability-playbook.jpg',
+
+  learnPoints: [
+    'How to quickly recognize when conditions are shifting before others notice',
+    'A simple framework for adapting plans in real-time without losing momentum or direction',
+    'How to reduce decision paralysis when facing uncertainty or incomplete information',
+    'Methods for staying effective and composed when priorities change unexpectedly',
+    'How to build mental flexibility so you can pivot without losing performance',
+    'A repeatable system for evaluating risks, options, and tradeoffs under pressure',
+    'How high-performing individuals and teams maintain clarity in fast-changing environments',
+  ],
+},
   {
     id: 2,
     slug: 'executive-resilience-handbook',
