@@ -58,7 +58,7 @@ const Header = () => {
               asChild 
               className="button-primary px-6 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
             >
-              <Link to="/contact">Get Started</Link>
+              <Link to="/shop">View Products</Link>
             </Button>
           </div>
         </div>

@@ -74,7 +74,7 @@ const HomePage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
-                  <Link to="/about">
+                  <Link to="/personal-development">
                     Learn More
                   </Link>
                 </Button>
@@ -107,7 +107,7 @@ const HomePage = () => {
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link to="/corporate-solutions">
                     View Corporate Solutions
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+                    <ArrowRight className="ml-2 h-6 w-4 transition-transform duration-200 group-hover:translate-x-1" />
                   </Link>
                 </Button>
               </motion.div>
