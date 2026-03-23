@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import BackToTop from '@/components/BackToTop.jsx';
 
-// 👇 import shared product data
+// ✅ use shared data
 import { products } from '@/data/products';
 
 const ShopPage = () => {
@@ -20,45 +20,82 @@ const ShopPage = () => {
     <>
       <Helmet>
         <title>AdaptivEdge Shop</title>
+        <meta
+          name="description"
+          content="Explore our collection of digital guides, handbooks, and toolkits designed to build operational resilience and strategic adaptability."
+        />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
         <Header />
 
-        <section className="py-6 md:py-10 border-b border-border/50 text-center">
-          <h1 className="text-4xl font-bold mb-4">AdaptivEdge Shop</h1>
-          <p className="text-muted-foreground">
-            Explore tools to improve clarity, adaptability, and performance.
-          </p>
+        {/* Hero Section */}
+        <section className="py-6 md:py-10 bg-card/20 backdrop-blur-sm border-b border-border/50">
+          <div className="container-custom text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-3xl mx-auto"
+            >
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
+                AdaptivEdge <span className="text-secondary">Shop</span>
+              </h1>
+              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+                Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level.
+              </p>
+            </motion.div>
+          </div>
         </section>
 
-        <section className="section-padding">
-          <div className="container-custom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.map((product, index) => (
-              <motion.div
-                key={product.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                <div className="card-minimal p-6 flex flex-col h-full">
-                  <div className="flex justify-between mb-4">
-                    <product.icon className="h-5 w-5 text-secondary" />
-                    <Badge variant="outline">{product.category}</Badge>
+        {/* Product Grid Section */}
+        <section className="section-padding bg-transparent">
+          <div className="container-custom">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {products.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="h-full"
+                >
+                  <div className="card-minimal p-6 h-full flex flex-col group">
+                    <div className="flex justify-between items-start mb-6">
+                      <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-muted text-secondary group-hover:bg-secondary/10 transition-colors duration-300">
+                        <product.icon className="h-5 w-5" />
+                      </div>
+                      <Badge
+                        variant="outline"
+                        className="bg-transparent border-border text-muted-foreground text-xs font-medium rounded-md"
+                      >
+                        {product.category}
+                      </Badge>
+                    </div>
+
+                    <h3 className="text-lg font-semibold leading-snug text-foreground mb-2">
+                      {product.title}
+                    </h3>
+
+                    <p className="text-sm leading-relaxed text-muted-foreground flex-1 mb-6">
+                      {product.description}
+                    </p>
+
+                    {/* ✅ UPDATED SECTION (price removed, button changed) */}
+                    <div className="mt-auto pt-6 border-t border-border">
+                      <Button
+                        className="w-full button-primary group/btn"
+                        onClick={() => navigate(`/product/${product.id}`)}
+                      >
+                        Learn More
+                      </Button>
+                    </div>
+
                   </div>
-
-                  <h3 className="font-semibold mb-2">{product.title}</h3>
-
-                  <p className="text-sm text-muted-foreground mb-6 flex-1">
-                    {product.description}
-                  </p>
-
-                  <Button onClick={() => navigate(`/product/${product.id}`)}>
-                    Learn More
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
 
