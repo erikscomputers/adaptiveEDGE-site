@@ -23,12 +23,23 @@ export const products = [
 },
   {
     id: 2,
-    slug: 'executive-resilience-handbook',
-    title: 'Executive Resilience Handbook',
-    description: 'Advanced strategies for leaders to maintain clarity and performance under extreme pressure.',
+    slug: 'resilience-handbook',
+    title: 'The Resilience Handbook',
+    description: 'Advanced strategies for individuals to maintain clarity and performance under extreme pressure.',
     category: 'Handbook',
     price: 19.87,
     icon: Briefcase,
+    image: '/product images/resilience-handbook.jpg',
+
+    learnPoints: [
+  'How to stay calm and maintain clarity when operating under high-pressure or high-stakes conditions',
+  'A practical framework for responding effectively when situations shift faster than expected',
+  'How to recognize early signals of instability or change before they escalate into major disruptions',
+  'Methods for making clear, confident decisions even when information is incomplete or uncertain',
+  'How to prevent cognitive overload and reduce decision fatigue in fast-moving environments',
+  'A repeatable system for prioritizing actions when everything feels urgent at once',
+  'How to build mental and operational resilience so performance stays consistent under stress',
+],
   },
   {
     id: 3,
