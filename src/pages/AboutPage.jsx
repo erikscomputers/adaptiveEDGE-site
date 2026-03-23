@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Target, Compass, Users } from 'lucide-react';
+import { Link } from 'react-router-dom'; // ✅ ADD THIS
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BackToTop from '@/components/BackToTop.jsx';
@@ -135,7 +136,7 @@ const AboutPage = () => {
           </div>
         </section>
 
- {/* Trust Building Section */}
+{/* Trust Building Section */}
 <section className="section-padding bg-transparent">
   <div className="container-custom">
     <motion.div
