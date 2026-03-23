@@ -69,14 +69,22 @@ const product = products.find((p) => p.slug === slug);
                 </p>
 
                 {/* Optional additional description */}
-                <div className="mb-10">
-                  <h2 className="text-xl font-semibold text-foreground mb-4">
-                    What You’ll Learn
-                  </h2>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Product coming soon!
-                  </p>
-                </div>
+              {product.learnPoints && (
+  <div className="mb-10 text-center">
+    <h2 className="text-xl font-semibold text-foreground mb-6">
+      What You’ll Learn
+    </h2>
+
+    <div className="space-y-3 text-left max-w-2xl mx-auto">
+      {product.learnPoints.map((point, index) => (
+        <p key={index} className="text-muted-foreground flex gap-2">
+          <span className="text-green-500">✔</span>
+          {point}
+        </p>
+      ))}
+    </div>
+  </div>
+)}
 
                 {/* Price + CTA */}
                 <div className="pt-8 border-t border-border flex flex-col items-center gap-6">
