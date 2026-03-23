@@ -89,6 +89,7 @@ learnPoints: [
     category: 'Toolkit',
     price: 498.79,
     icon: Target,
+    image: '/product images/hiring-traveling-technicians-course.jpg',
 
 learnPoints: [
   'How to identify the exact profile of a high-performing traveling technician based on your operational needs',
