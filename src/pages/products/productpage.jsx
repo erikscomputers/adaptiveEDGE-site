@@ -1,11 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
 import { useParams, useNavigate } from 'react-router-dom';
 
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
+import BackToTop from '@/components/BackToTop.jsx';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
-// 👇 shared data
 import { products } from '@/data/products';
 
 const ProductPage = () => {
@@ -15,35 +18,118 @@ const ProductPage = () => {
   const product = products.find((p) => p.id === Number(id));
 
   if (!product) {
-    return <div className="p-10 text-center">Product not found</div>;
+    return (
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <div className="flex-1 flex items-center justify-center">
+          <p className="text-muted-foreground">Product not found</p>
+        </div>
+        <Footer />
+      </div>
+    );
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
+    <>
+      <Helmet>
+        <title>{product.title} | AdaptivEdge</title>
+        <meta name="description" content={product.description} />
+      </Helmet>
 
-      <div className="container-custom py-16 max-w-3xl mx-auto">
-        <Button variant="ghost" onClick={() => navigate(-1)} className="mb-6">
-          ← Back
-        </Button>
+      <div className="min-h-screen flex flex-col bg-transparent">
+        <Header />
 
-        <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
+        {/* Hero / Header */}
+        <section className="py-6 md:py-10 bg-card/20 backdrop-blur-sm border-b border-border/50">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto"
+            >
+              <Button
+                variant="ghost"
+                onClick={() => navigate(-1)}
+                className="mb-6"
+              >
+                ← Back
+              </Button>
 
-        <p className="text-muted-foreground mb-6">
-          {product.description}
-        </p>
+              <div className="flex items-center gap-4 mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-muted text-secondary">
+                  <product.icon className="h-6 w-6" />
+                </div>
 
-        <div className="text-2xl font-bold mb-6">
-          ${product.price.toFixed(2)}
-        </div>
+                <Badge
+                  variant="outline"
+                  className="bg-transparent border-border text-muted-foreground text-xs font-medium rounded-md"
+                >
+                  {product.category}
+                </Badge>
+              </div>
 
-        <Button className="w-full">
-          Purchase
-        </Button>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-foreground mb-4">
+                {product.title}
+              </h1>
+
+              <p className="text-lg text-muted-foreground max-w-2xl">
+                {product.description}
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Content Section */}
+        <section className="section-padding bg-transparent">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="max-w-4xl mx-auto"
+            >
+              <div className="card-minimal p-8 md:p-10">
+
+                {/* Placeholder for deeper content */}
+                <div className="mb-10">
+                  <h2 className="text-xl font-semibold text-foreground mb-4">
+                    What You’ll Learn
+                  </h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    This resource is designed to give you structured frameworks,
+                    practical tools, and repeatable systems you can immediately
+                    apply to improve decision-making, adaptability, and
+                    performance in dynamic environments.
+                  </p>
+                </div>
+
+                {/* Price + CTA */}
+                <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-1">Price</p>
+                    <p
+                      className="text-3xl font-bold text-foreground"
+                      style={{ fontVariantNumeric: 'tabular-nums' }}
+                    >
+                      ${product.price.toFixed(2)}
+                    </p>
+                  </div>
+
+                  <Button className="button-primary w-full md:w-auto">
+                    Purchase
+                  </Button>
+                </div>
+
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        <Footer />
+        <BackToTop />
       </div>
-
-      <Footer />
-    </div>
+    </>
   );
 };
 
