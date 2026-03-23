@@ -48,6 +48,15 @@ const product = products.find((p) => p.slug === slug);
               className="max-w-4xl mx-auto"
             >
               <div className="card-minimal p-8 md:p-10 text-center">
+                {product.image && (
+  <div className="mb-8 flex justify-center">
+    <img
+      src={product.image}
+      alt={product.title}
+      className="w-full max-w-md rounded-lg shadow-xl ring-1 ring-border/20 object-cover"
+    />
+  </div>
+)}
 
                 {/* Title */}
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
