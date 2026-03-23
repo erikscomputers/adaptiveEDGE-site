@@ -107,10 +107,10 @@ const HomePage = () => {
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link 
   to="/corporate-solutions" 
-  className="text-xl md:text-2xl font-bold flex items-center"
+  className="text-accent flex items-center"
 >
   View Corporate Solutions
-  <ArrowRight className="ml-3 h-7 w-7 transition-transform duration-200 group-hover:translate-x-1" />
+  <ArrowRight className="ml-2 h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" />
 </Link>
                 </Button>
               </motion.div>
