@@ -11,10 +11,10 @@ import { Button } from '@/components/ui/button';
 import { products } from '@/data/products';
 
 const ProductPage = () => {
-  const { id } = useParams();
-  const navigate = useNavigate();
+  const { slug } = useParams();
+const navigate = useNavigate();
 
-  const product = products.find((p) => p.id === Number(id));
+const product = products.find((p) => p.slug === slug);
 
   if (!product) {
     return (

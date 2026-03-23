@@ -29,7 +29,7 @@ function App() {
           <Route path="/shop" element={<ShopPage />} />
 
           {/* ✅ ADD THIS ROUTE */}
-          <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/product/:slug" element={<ProductPage />} />
 
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

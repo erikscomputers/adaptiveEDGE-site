@@ -3,6 +3,7 @@ import { BookOpen, FileText, Briefcase, ShieldAlert, Users, Plane, Target } from
 export const products = [
   {
     id: 1,
+    slug: 'adaptability-playbook',
     title: 'The Adaptability Playbook',
     description: 'Core frameworks for recognizing changing conditions and adjusting plans effectively in real-time.',
     category: 'Guide',
@@ -11,6 +12,7 @@ export const products = [
   },
   {
     id: 2,
+    slug: 'executive-resilience-handbook',
     title: 'Executive Resilience Handbook',
     description: 'Advanced strategies for leaders to maintain clarity and performance under extreme pressure.',
     category: 'Handbook',
@@ -19,6 +21,7 @@ export const products = [
   },
   {
     id: 3,
+    slug: 'decision-making-in-uncertainty',
     title: 'Decision-Making in Uncertainty',
     description: 'A structured approach to minimizing errors and increasing confidence in high-stakes situations.',
     category: 'Guide',
@@ -27,6 +30,7 @@ export const products = [
   },
   {
     id: 4,
+    slug: 'remote-work-optimization-manual',
     title: 'Remote Work Optimization Manual',
     description: 'Systems and practices for distributed teams to maintain peak productivity and communication.',
     category: 'Manual',
@@ -35,6 +39,7 @@ export const products = [
   },
   {
     id: 5,
+    slug: 'crisis-response-framework',
     title: 'Crisis Response Framework',
     description: 'Step-by-step protocols for stabilizing operations and recovering quickly from unexpected disruptions.',
     category: 'Guide',
@@ -43,6 +48,7 @@ export const products = [
   },
   {
     id: 6,
+    slug: 'team-resilience-workbook',
     title: 'Team Resilience Workbook',
     description: 'Interactive exercises to build collective problem-solving capabilities and psychological safety.',
     category: 'Workbook',
@@ -51,6 +57,7 @@ export const products = [
   },
   {
     id: 7,
+    slug: 'travel-performance-strategies',
     title: 'Travel Performance Strategies',
     description: 'Tactics for maintaining energy, focus, and routine while working across multiple time zones.',
     category: 'Guide',
@@ -59,6 +66,7 @@ export const products = [
   },
   {
     id: 8,
+    slug: 'scenario-planning-toolkit',
     title: 'Scenario Planning Toolkit',
     description: 'Templates and methodologies for anticipating future challenges and preparing strategic responses.',
     category: 'Toolkit',
