@@ -10,20 +10,20 @@ const AboutPage = () => {
   const philosophyPoints = [{
     icon: Target,
     title: 'Clarity',
-    description: 'The best decisions come from clarity, not pressure. We help build the mindset and frameworks needed to adapt quickly, stay focused, and execute with confidence—even in high-stakes situations.'
+    description: 'The best decisions come from clarity, not pressure. We help you build the mindset and frameworks needed to adapt quickly, stay focused, and strategize with confidence — even in high-stakes situations.'
   }, {
     icon: Compass,
-    title: 'Execution',
-    description: 'Theory alone doesn’t create results. We focus on practical, actionable frameworks that translate directly into better decisions, stronger performance, and measurable outcomes.'
+    title: 'Strategic Action',
+    description: 'Planning without purpose achieves little. We teach practical, repeatable systems that translate understanding into effective strategies, smarter decisions, and tangible results.'
   }, {
     icon: Users,
     title: 'Sustainable Capability',
-    description: 'Quick fixes create dependency. We build lasting capability — equipping individuals and teams to solve problems, adapt to new challenges, and continue improving long after our work is done.'
+    description: 'Quick fixes create dependency. We build lasting capability, equipping individuals and teams to solve problems, adapt to new challenges, and continue improving long after our guidance ends.'
   }];
   return <>
       <Helmet>
         <title>About AdaptivEdge - Our Mission & Approach</title>
-        <meta name="description" content="Learn about AdaptivEdge's mission to help leaders and teams navigate uncertainty with calm confidence through practical problem-solving frameworks." />
+        <meta name="description" content="We help people navigate uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -45,7 +45,7 @@ const AboutPage = () => {
   <span className="text-secondary">About</span> AdaptivEdge
 </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                We help people navigate uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge.
+                We help people navigate uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge.
               </p>
             </motion.div>
           </div>
@@ -70,13 +70,13 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  In a world of constant change and increasing complexity, success depends on one thing: adaptation, execution, and a leading edge. Most individuals and organizations struggle to keep pace because they lack structured, repeatable systems for building these capabilities.
+                  In a world of constant change and complexity, success comes down to one thing: the ability to adapt, think strategically, and maintain a competitive edge. Most individuals and organizations struggle to keep pace because they lack structured, repeatable systems to build these capabilities.
                 </p>
                 <p>
-                  AdaptivEdge exists to change that. We provide practical frameworks, proven methodologies, and expert guidance that help individuals and teams respond to uncertainty with clarity and confidence. Our approach is grounded in real-world application — not abstract theory.
+                  AdaptivEdge exists to change that. We provide practical frameworks, proven methodologies, and expert guidance that help individuals and teams respond to uncertainty with clarity, confidence, and control. Our approach is grounded in real-world application — not abstract theory.
                 </p>
                 <p>
-                  We believe adaptability is not a fixed trait — it is a skill. Through deliberate practice, structured thinking, and continuous improvement, anyone can develop the ability to navigate complexity and consistently perform at a higher level.
+                  We believe adaptability is not a fixed trait — it is a developable skill. Through deliberate practice, structured thinking, and continuous improvement, anyone can learn to navigate complexity and consistently perform at a higher level.
                 </p>
               </div>
             </motion.div>
@@ -153,13 +153,13 @@ const AboutPage = () => {
               </h2>
               <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
                 <p>
-                  We work with teams operating across boundaries, professionals building in fast-moving environments, and individuals trying to improve their lives. Our clients share one thing in common: they understand that adaptation, execution, and a leading edge are what drive performance.
+                  We work with teams operating across boundaries, professionals building in fast-moving environments, and individuals looking to improve their lives. Our clients share one thing in common: they understand that adaptability, strategic thinking, and a leading edge are what drive lasting performance.
                 </p>
                 <p>
-                  What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
+                  What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size-fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
                 </p>
                 <p>
-                  Our goal is not to create dependency, but to build capability. When our work is complete, you should have the frameworks, skills, and confidence to continue improving and adapting on your own — sustaining your edge long after our engagement ends.
+                  Our goal is not to create dependency but to build capability. When our work is complete, you’ll have the frameworks, skills, and confidence to adapt, strategize, and prevail on your own — sustaining your edge long after our engagement ends.
                 </p>
               </div>
             </motion.div>
