@@ -17,33 +17,33 @@ const HomePage = () => {
   }, {
     icon: Zap,
     title: 'Strategic adaptability',
-    description: 'Recognize shifting conditions early, adjust your approach with intent, and capitalize on emerging opportunities before others do.'
+    description: 'Recognize shifting conditions early, strategize your approach with intent, and capitalize on emerging opportunities before others do.'
   }];
   const methodSteps = [{
     number: '01',
     title: 'Observe',
-    description: 'Gather relevant information and identify what matters.'
+    description: 'Gather relevant information and identify what truly matters.'
   }, {
     number: '02',
     title: 'Assess',
-    description: 'Analyze the situation to understand context, constraints, and opportunity.'
+    description: 'Analyze the situation to understand context, constraints, and opportunities.'
   }, {
     number: '03',
     title: 'Adapt',
     description: 'Adjust your approach based on what you’ve learned.'
   }, {
     number: '04',
-    title: 'Execute',
-    description: 'Act with clarity, precision, and confidence.'
+    title: 'Strategize',
+    description: 'Develop the best plan of action under uncertainty, high pressure, and unknown environments.'
   }, {
     number: '05',
-    title: 'Improve',
-    description: 'Reflect, refine, and strengthen your approach over time.'
+    title: 'Prevail',
+    description: 'Execute with precision, confidence, and a lasting competitive edge.'
   }];
   return <>
       <Helmet>
-        <title>AdaptivEdge - Adapt. Execute. Prevail.</title>
-        <meta name="description" content="We help professionals and teams excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge." />
+        <title>AdaptivEdge - Adapt. Strategize. Prevail.</title>
+        <meta name="description" content="Helping you excel in uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -66,11 +66,11 @@ const HomePage = () => {
             ease: "easeOut"
           }} className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground tracking-tight">
-                Adapt. Execute.<br />
+                Adapt. Strategize.<br />
                 <span className="text-accent">Prevail.</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
-                Helping you excel in uncertainty by building the ability to adapt quickly, execute a plan, and lead with an edge.
+                Helping you excel in uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
@@ -102,7 +102,7 @@ const HomePage = () => {
                   Master <span className="text-secondary">Operational Resilience</span>
                 </h2>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, execute a plan, and lead with an edge — recognizing change early, adjusting with precision, and acting when it matters most.
+                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, develop smart strategies, and prevail under pressure—recognizing change early, adjusting with precision, and acting with confidence when it matters most.
                 </p>
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link to="/corporate-solutions">
@@ -126,7 +126,7 @@ const HomePage = () => {
             }} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {valueProps.map((prop, index) => <ValuePropositionCard key={index} {...prop} />)}
                 <div className="sm:col-span-2">
-                  <ValuePropositionCard icon={Target} title="Clear decision-making" description="Apply structured thinking to reduce uncertainty, improve judgment, and execute confidently in high-stakes situations." />
+                  <ValuePropositionCard icon={Target} title="Clear decision-making" description="Apply structured thinking to reduce uncertainty, improve judgment, and act confidently in high-stakes situations." />
                 </div>
               </motion.div>
             </div>
@@ -151,7 +151,7 @@ const HomePage = () => {
                 The AdaptivEdge Method
               </h2>
               <p className="text-lg leading-relaxed text-muted-foreground max-w-[65ch] mx-auto">
-                A structured framework to help you operate with clarity, move with intent, and build a lasting edge.
+                A structured framework to help you operate with clarity, move with purpose, and maintain a lasting edge.
               </p>
             </motion.div>
 
