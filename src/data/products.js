@@ -1,0 +1,68 @@
+import { BookOpen, FileText, Briefcase, ShieldAlert, Users, Plane, Target } from 'lucide-react';
+
+export const products = [
+  {
+    id: 1,
+    title: 'The Adaptability Playbook',
+    description: 'Core frameworks for recognizing changing conditions and adjusting plans effectively in real-time.',
+    category: 'Guide',
+    price: 9.87,
+    icon: BookOpen,
+  },
+  {
+    id: 2,
+    title: 'Executive Resilience Handbook',
+    description: 'Advanced strategies for leaders to maintain clarity and performance under extreme pressure.',
+    category: 'Handbook',
+    price: 19.87,
+    icon: Briefcase,
+  },
+  {
+    id: 3,
+    title: 'Decision-Making in Uncertainty',
+    description: 'A structured approach to minimizing errors and increasing confidence in high-stakes situations.',
+    category: 'Guide',
+    price: 14.87,
+    icon: Target,
+  },
+  {
+    id: 4,
+    title: 'Remote Work Optimization Manual',
+    description: 'Systems and practices for distributed teams to maintain peak productivity and communication.',
+    category: 'Manual',
+    price: 24.87,
+    icon: FileText,
+  },
+  {
+    id: 5,
+    title: 'Crisis Response Framework',
+    description: 'Step-by-step protocols for stabilizing operations and recovering quickly from unexpected disruptions.',
+    category: 'Guide',
+    price: 12.87,
+    icon: ShieldAlert,
+  },
+  {
+    id: 6,
+    title: 'Team Resilience Workbook',
+    description: 'Interactive exercises to build collective problem-solving capabilities and psychological safety.',
+    category: 'Workbook',
+    price: 29.87,
+    icon: Users,
+  },
+  {
+    id: 7,
+    title: 'Travel Performance Strategies',
+    description: 'Tactics for maintaining energy, focus, and routine while working across multiple time zones.',
+    category: 'Guide',
+    price: 11.87,
+    icon: Plane,
+  },
+  {
+    id: 8,
+    title: 'Scenario Planning Toolkit',
+    description: 'Templates and methodologies for anticipating future challenges and preparing strategic responses.',
+    category: 'Toolkit',
+    price: 34.87,
+    icon: Target,
+  },
+];

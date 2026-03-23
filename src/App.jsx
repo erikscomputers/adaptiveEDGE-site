@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import ScrollToTop from '@/components/ScrollToTop.jsx';
+
 import HomePage from '@/pages/HomePage.jsx';
 import CorporateSolutionsPage from '@/pages/CorporateSolutionsPage.jsx';
 import PersonalDevelopmentPage from '@/pages/PersonalDevelopmentPage.jsx';
@@ -11,6 +11,9 @@ import ContactPage from '@/pages/ContactPage.jsx';
 import ShopPage from '@/pages/ShopPage.jsx';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage.jsx';
 import TermsOfServicePage from '@/pages/TermsOfServicePage.jsx';
+
+// ✅ ADD THIS IMPORT
+import ProductPage from '@/pages/products/ProductPage.jsx';
 
 function App() {
   return (
@@ -24,6 +27,10 @@ function App() {
           <Route path="/personal-development" element={<PersonalDevelopmentPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/shop" element={<ShopPage />} />
+
+          {/* ✅ ADD THIS ROUTE */}
+          <Route path="/product/:id" element={<ProductPage />} />
+
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
