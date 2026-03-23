@@ -88,7 +88,7 @@ learnPoints: [
     description: 'An intensive 1-hour remote course designed for executives, hiring teams, and service managers. It provides a structured approach to sourcing, evaluating, and hiring high-performing traveling technicians, with a focus on improving hiring accuracy, reducing turnover, and building a more reliable field workforce.',
     category: 'Toolkit',
     price: 498.79,
-    icon: Target,
+    icon: Plane,
     image: '/product images/hiring-traveling-technicians-course.jpg',
 
 learnPoints: [
