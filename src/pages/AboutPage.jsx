@@ -135,45 +135,47 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Trust Building Section */}
-        <section className="section-padding bg-transparent">
-          <div className="container-custom">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.5
-          }} className="max-w-3xl mx-auto">
-              <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
-                Why work with us
-              </h2>
-              <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-                <p>
-                  We work with teams operating across boundaries, professionals building in fast-moving environments, and individuals looking to improve their lives. Our clients share one thing in common: they understand that adaptability, strategic thinking, and a leading edge are what drive lasting performance.
-                </p>
-                <p>
-                  What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size-fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
-                </p>
-                <p>
-                  Our goal is not to create dependency but to build capability. When our work is complete, you’ll have the frameworks, skills, and confidence to adapt, strategize, and prevail on your own — sustaining your edge long after our engagement ends.
-                </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
-                  <Link to="/contact">
-                    Contact Us
-                  </Link>
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+ {/* Trust Building Section */}
+<section className="section-padding bg-transparent">
+  <div className="container-custom">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="max-w-3xl mx-auto"
+    >
+      <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
+        Why work with us
+      </h2>
 
-        <Footer />
+      <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+        <p>
+          We work with teams operating across boundaries, professionals building in fast-moving environments, and individuals looking to improve their lives. Our clients share one thing in common: they understand that adaptability, strategic thinking, and a leading edge are what drive lasting performance.
+        </p>
+
+        <p>
+          What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size-fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
+        </p>
+
+        <p>
+          Our goal is not to create dependency but to build capability. When our work is complete, you’ll have the frameworks, skills, and confidence to adapt, strategize, and prevail on your own — sustaining your edge long after our engagement ends.
+        </p>
+      </div> {/* ✅ THIS WAS MISSING */}
+
+      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
+          <Link to="/contact">
+            Contact Us
+          </Link>
+        </Button>
+      </div>
+
+    </motion.div>
+  </div>
+</section>
+
+<Footer />
         <BackToTop />
       </div>
     </>;
