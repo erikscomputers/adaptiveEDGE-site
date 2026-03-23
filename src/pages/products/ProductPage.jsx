@@ -75,7 +75,7 @@ const product = products.find((p) => p.slug === slug);
               {product.learnPoints && (
   <div className="mb-10 text-center">
     <h2 className="text-xl font-semibold text-foreground mb-6">
-      What You’ll Learn
+      What You Get
     </h2>
 
     <div className="space-y-3 text-left max-w-2xl mx-auto">

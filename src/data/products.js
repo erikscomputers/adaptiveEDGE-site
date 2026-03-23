@@ -65,10 +65,21 @@ export const products = [
     id: 4,
     slug: 'remote-work-optimization-manual',
     title: 'Remote Work Optimization Manual',
-    description: 'Systems and practices for distributed teams to maintain peak productivity and communication.',
+    description: 'Systems and practices for reomte workers to maintain peak productivity and communication.',
     category: 'Manual',
     price: 24.87,
     icon: FileText,
+    image: '/product images/remote-work-optimization-manual.jpg',
+
+learnPoints: [
+  'How to structure your remote work environment to maximize focus, consistency, and output',
+  'A practical system for prioritizing tasks and managing workload without in-person supervision',
+  'How to communicate clearly and efficiently across distributed teams without unnecessary meetings',
+  'Methods for avoiding distractions and maintaining deep work sessions in remote settings',
+  'How to create daily and weekly routines that improve accountability and performance',
+  'A framework for tracking progress and ensuring alignment with team goals in real time',
+  'How high-performing remote workers maintain productivity, clarity, and collaboration across time zones',
+],
   },
   {
     id: 5,
