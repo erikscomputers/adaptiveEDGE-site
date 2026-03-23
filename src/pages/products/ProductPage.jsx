@@ -39,7 +39,7 @@ const ProductPage = () => {
         <Header />
 
         {/* Content Section ONLY */}
-        <section className="section-padding bg-transparent">
+        <section className="pt-10 md:pt-14 pb-20 bg-transparent">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -47,7 +47,7 @@ const ProductPage = () => {
               transition={{ duration: 0.5 }}
               className="max-w-4xl mx-auto"
             >
-              <div className="card-minimal p-8 md:p-10">
+              <div className="card-minimal p-8 md:p-10 text-center">
 
                 {/* Title */}
                 <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -73,7 +73,7 @@ const ProductPage = () => {
                 </div>
 
                 {/* Price + CTA */}
-                <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div className="pt-8 border-t border-border flex flex-col items-center gap-6">
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Price</p>
                     <p
@@ -84,7 +84,7 @@ const ProductPage = () => {
                     </p>
                   </div>
 
-                  <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+                  <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto justify-center">
                     <Button
                       variant="ghost"
                       onClick={() => navigate(-1)}
