@@ -49,6 +49,17 @@ export const products = [
     category: 'Guide',
     price: 14.87,
     icon: Target,
+    image: '/product images/decision-making-in-uncertainty.jpg',
+
+    learnPoints: [
+  'How to make confident decisions when information is incomplete, unclear, or constantly changing',
+  'A structured framework for reducing errors and improving judgment in high-stakes situations',
+  'How to separate signal from noise to avoid being misled by irrelevant or distracting data',
+  'Methods for evaluating risk vs reward quickly without overthinking or analysis paralysis',
+  'How to build decision speed without sacrificing accuracy or long-term outcomes',
+  'A repeatable process for choosing the best option when all available paths carry uncertainty',
+  'How high performers maintain consistency and clarity when outcomes are unpredictable',
+],
   },
   {
     id: 4,
