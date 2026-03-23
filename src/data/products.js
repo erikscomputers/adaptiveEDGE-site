@@ -81,6 +81,25 @@ learnPoints: [
   'How high-performing remote workers maintain productivity, clarity, and collaboration across time zones',
 ],
   },
+    {
+    id: 9,
+    slug: 'hiring-traveling-technicians-course',
+    title: 'Hiring Traveling Technicians Course',
+    description: 'An intensive 1-hour remote course designed for executives, hiring teams, and service managers. It provides a structured approach to sourcing, evaluating, and hiring high-performing traveling technicians, with a focus on improving hiring accuracy, reducing turnover, and building a more reliable field workforce.',
+    category: 'Toolkit',
+    price: 498.79,
+    icon: Target,
+
+learnPoints: [
+  'How to identify the exact profile of a high-performing traveling technician based on your operational needs',
+  'A structured framework for sourcing qualified candidates across regional and national talent pools',
+  'How to effectively vet technical skill, reliability, and field-readiness before making hiring decisions',
+  'Methods for assessing soft skills like adaptability, communication, and on-site problem solving',
+  'How to design a hiring process that reduces turnover and improves long-term technician performance',
+  'A repeatable system for comparing candidates objectively to avoid biased or inconsistent decisions',
+  'How executives and hiring teams can build a scalable pipeline for consistently recruiting travel technicians',
+],
+  },
   {
     id: 5,
     slug: 'crisis-response-framework',
