@@ -38,42 +38,26 @@ const ProductPage = () => {
       <div className="min-h-screen flex flex-col bg-transparent">
         <Header />
 
-        {/* Hero Section - same height as ShopPage */}
-        <section className="min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh] flex items-center justify-center bg-card/20 backdrop-blur-sm border-b border-border/50">
-          <div className="container-custom text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mx-auto"
-            >
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-                {product.title}
-              </h1>
-              <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                {product.description}
-              </p>
-              <Button
-                variant="ghost"
-                onClick={() => navigate(-1)}
-                className="mt-8"
-              >
-                ← Back to Shop
-              </Button>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Content Section */}
+        {/* Content Section ONLY */}
         <section className="section-padding bg-transparent">
           <div className="container-custom">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="max-w-4xl mx-auto"
             >
               <div className="card-minimal p-8 md:p-10">
+
+                {/* Title */}
+                <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                  {product.title}
+                </h1>
+
+                {/* Description */}
+                <p className="text-muted-foreground leading-relaxed mb-10">
+                  {product.description}
+                </p>
 
                 {/* Optional additional description */}
                 <div className="mb-10">
@@ -100,9 +84,19 @@ const ProductPage = () => {
                     </p>
                   </div>
 
-                  <Button className="button-primary w-full md:w-auto">
-                    Purchase
-                  </Button>
+                  <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
+                    <Button
+                      variant="ghost"
+                      onClick={() => navigate(-1)}
+                      className="w-full md:w-auto"
+                    >
+                      ← Back to Shop
+                    </Button>
+
+                    <Button className="button-primary w-full md:w-auto">
+                      Purchase
+                    </Button>
+                  </div>
                 </div>
 
               </div>
