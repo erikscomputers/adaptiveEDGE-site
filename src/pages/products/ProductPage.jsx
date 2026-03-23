@@ -65,10 +65,7 @@ const product = products.find((p) => p.slug === slug);
                     What You’ll Learn
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    This resource is designed to give you structured frameworks,
-                    practical tools, and repeatable systems you can immediately
-                    apply to improve decision-making, adaptability, and
-                    performance in dynamic environments.
+                    Product coming soon!
                   </p>
                 </div>
 

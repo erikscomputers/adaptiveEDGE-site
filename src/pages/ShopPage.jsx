@@ -22,7 +22,7 @@ const ShopPage = () => {
         <title>AdaptivEdge Shop</title>
         <meta
           name="description"
-          content="Explore our collection of digital guides, handbooks, and toolkits designed to build operational resilience and strategic adaptability."
+          content="Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level."
         />
       </Helmet>
 
