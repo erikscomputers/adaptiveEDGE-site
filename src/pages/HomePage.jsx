@@ -102,7 +102,7 @@ const HomePage = () => {
                   Master <span className="text-secondary">Operational Resilience</span>
                 </h2>
                 <p className="text-lg leading-relaxed text-muted-foreground mb-8">
-                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, develop smart strategies, and prevail under pressure—recognizing change early, adjusting with precision, and acting with confidence when it matters most.
+                  In a world of constant disruption, survival isn’t enough. You need the ability to adapt quickly, develop smart strategies, and prevail under pressure — recognizing change early, adjusting with precision, and acting with confidence when it matters most.
                 </p>
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link to="/corporate-solutions">
