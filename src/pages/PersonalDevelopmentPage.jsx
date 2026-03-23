@@ -14,25 +14,25 @@ const PersonalDevelopmentPage = () => {
       id: 'coaching',
       icon: User,
       title: 'Coaching',
-      description: 'One-on-one coaching for individuals focused on clear thinking, confident decision-making, and strategic adaptability in high-stakes environments. Identify blind spots and build mental models for leading under pressure.',
+      description: 'One-on-one coaching for individuals focused on clarity under pressure, confident decision-making, and strategic adaptability. Identify personal blind spots, build mental frameworks, and develop the skills to navigate challenges and lead yourself effectively, no matter the situation.',
     },
     {
       id: 'training',
       icon: Target,
       title: 'Adaptability & Resilience Training',
-      description: 'Develop the skills to navigate uncertainty, manage stress, and maintain peak performance during change. Learn to anticipate shifting conditions and pivot decisively without losing momentum.',
+      description: 'Develop the skills to handle uncertainty, manage stress, and maintain peak performance during change. Learn to anticipate shifting conditions, pivot decisively, and respond with purpose — so you can thrive in both personal and professional life.',
     },
     {
       id: 'troubleshooting',
       icon: Wrench,
-      title: 'Troubleshooting Frameworks',
-      description: 'Master structured approaches to diagnose problems, identify root causes, and implement effective solutions in complex systems. Move beyond reactive firefighting into confident, systematic problem-solving.',
+      title: 'Problem-Solving Frameworks',
+      description: 'Master structured approaches to diagnose challenges, identify root causes, and implement effective solutions. Move beyond reactive problem-solving into confident, systematic action that works in any complex or unpredictable situation.',
     },
     {
       id: 'performance',
       icon: Briefcase,
-      title: 'Strategies for Traveling Professionals',
-      description: 'Personalized coaching on maintaining peak performance, managing energy, and building sustainable routines—whether you’re working across multiple locations, time zones, or unfamiliar environments. Optimize your personal operating system for modern professional demands.',
+      title: 'Strategies for Traveling or Remote Professionals',
+      description: 'Personalized coaching on maintaining performance, managing energy, and building sustainable routines — whether you’re moving between locations, time zones, or unfamiliar environments. Optimize your personal operating system to stay sharp, focused, and adaptable wherever life or work takes you.',
     },
   ];
 
@@ -40,7 +40,7 @@ const PersonalDevelopmentPage = () => {
     <>
       <Helmet>
         <title>Personal Development | AdaptivEdge</title>
-        <meta name="description" content="Individual coaching and training programs for professionals committed to continuous growth, clear thinking, and strategic adaptability." />
+        <meta name="description" content="Individual coaching and training programs designed to help you adapt quickly, strategize effectively, and prevail — so you can take control of uncertainty, make better decisions, and thrive in any area of life." />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -59,7 +59,7 @@ const PersonalDevelopmentPage = () => {
                 Personal <span className="text-secondary">Development</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Individual coaching and training programs for adapting quickly, thinking clearly, and leading with an edge.
+                Individual coaching and training programs designed to help you adapt quickly, strategize effectively, and prevail — so you can take control of uncertainty, make better decisions, and thrive in any area of life.
               </p>
             </motion.div>
           </div>
@@ -121,7 +121,7 @@ const PersonalDevelopmentPage = () => {
                 Elevate your personal performance
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Take the first step toward strategic adaptability, clear decision-making, and high-impact professional growth.
+                Take the first step toward strategic adaptability, clear decision-making, and high-impact growth. Learn to thrive in uncertainty and gain the tools to adapt, strategize, and prevail in your life.
               </p>
               <Button 
                 asChild 
