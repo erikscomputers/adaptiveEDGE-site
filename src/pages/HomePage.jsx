@@ -107,10 +107,10 @@ const HomePage = () => {
                 <Button asChild variant="ghost" className="px-0 text-secondary hover:text-secondary/80 hover:bg-transparent group">
                   <Link
   to="/corporate-solutions"
-  className="inline-flex items-center justify-center text-xl md:text-2xl font-semibold px-8 py-5 rounded-xl bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+  className="inline-flex items-center justify-center text-xl md:text-2xl font-semibold px-8 py-5 rounded-xl bg-accent text-white hover:bg-accent/90 transition-all duration-200 shadow-lg hover:shadow-xl"
 >
   View Corporate Solutions
-  <ArrowRight className="ml-3 h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" />
+  <ArrowRight className="ml-3 h-7 w-7 text-white transition-transform duration-200 group-hover:translate-x-1" />
 </Link>
                 </Button>
               </motion.div>
