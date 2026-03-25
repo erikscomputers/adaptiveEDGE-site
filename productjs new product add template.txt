@@ -7,24 +7,44 @@
   price: 19.99,
   icon: BookOpen,
   image: '/images/product images/adaptability-playbook.jpg',
-}
+
+  learnPoints: [
+    'How to quickly recognize when conditions are shifting before others notice',
+    'A simple framework for adapting plans in real-time without losing momentum or direction',
+    'How to reduce decision paralysis when facing uncertainty or incomplete information',
+    'Methods for staying effective and composed when priorities change unexpectedly',
+    'How to build mental flexibility so you can pivot without losing performance',
+    'A repeatable system for evaluating risks, options, and tradeoffs under pressure',
+    'How high-performing individuals and teams maintain clarity in fast-changing environments',
+  ],
+
+},
 
 
 
-A premium, minimal 3D book cover titled “The Adaptability Playbook”. The book is shown as a sleek modern softcover with subtle matte texture and soft shadowing. The design is clean, corporate, and strategic — inspired by high-end consulting and modern digital product brands.
+A premium 3D digital product visualization titled “Remote Work Optimization Manual” presented as a modern digital download asset, not a physical book. The design should look like a high-end strategic framework or premium PDF system. The object is a floating digital interface card or sleek holographic document panel, slightly angled in 3D space. It resembles a professional SaaS product preview or downloadable knowledge system. The title “Remote Work Optimization Manual” appears in clean, modern sans-serif typography on the front UI panel. Below it, subtle UI elements suggest structured content such as sections, modules, and frameworks (abstract lines, grids, or cards — not readable text). Style is ultra-minimal, premium, and corporate — inspired by Apple Keynote design, Notion UI, and high-end consulting dashboards. Color palette: deep yellow, charcoal black, soft gradients, and subtle electric blue or teal accents. Lighting: soft studio lighting with gentle glow effects around the edges to emphasize a digital, floating interface. Background: clean gradient (dark to slightly lighter), with subtle depth blur to enhance focus on the product. Composition: centered, square format (1:1), optimized for e-commerce product thumbnails. Leave breathing room for cropping. Style keywords: digital product, SaaS UI, premium download, strategic framework, modern consulting aesthetic, minimal, high-end, floating interface. Output format: high-resolution JPG, crisp edges, no watermark, no physical book, no paper texture.
 
-The cover features abstract geometric shapes representing adaptability, flexibility, and systems thinking (flowing lines, modular grids, or shifting blocks). No clutter, no illustrations of people.
 
-Color palette: deep navy, charcoal, and subtle accents of electric blue or muted teal.
+A premium 3D digital product visualization for AdaptivEdge, titled “Hiring Traveling Technicians,” presented as a high-end 1-hour remote training course. The design should NOT look like a physical product, but instead a modern digital learning asset or interactive training module.
 
-The title “The Adaptability Playbook” is clearly visible in elegant modern sans-serif typography, centered and balanced.
+The object is a floating holographic UI panel or sleek digital course card, angled slightly in 3D space, resembling a premium SaaS dashboard or online learning interface.
 
-The book is angled slightly in a 3D perspective (not flat), floating or resting on a soft neutral gradient background.
+The title “Hiring Traveling Technicians” is displayed in clean, modern sans-serif typography at the top of the interface. Subtle secondary text indicates “1-Hour Remote Strategic Training” without being overly detailed.
 
-Lighting: soft studio lighting with subtle reflections and gentle shadows for depth.
+The visual language should communicate structured learning systems: modular sections, checklists, and workflow elements represented as abstract UI components (lines, blocks, and segmented panels — not readable paragraphs).
 
-Style: ultra-clean, professional, minimal, high-end business strategy aesthetic, similar to consulting reports or tech SaaS branding.
+Brand identity “AdaptivEdge — Adapt. Strategize. Prevail.” should be subtly integrated at the bottom or corner as a refined watermark-style element.
 
-Composition: centered, square or near-square framing optimized for product thumbnails (1:1 or 4:5 ratio). Leave enough padding around the book for cropping.
+Style is ultra-modern, minimal, and premium — inspired by Notion, Linear, and high-end consulting dashboards.
 
-Output format: high-resolution JPG, crisp edges, no watermark, no mockup text besides the title.
+Color palette: deep navy, matte black, soft charcoal gradients with subtle electric blue and teal highlights to signal intelligence and precision.
+
+Lighting: soft studio lighting with gentle glow edges, emphasizing depth and a floating digital interface effect.
+
+Background: clean gradient backdrop with soft blur, ensuring strong focus on the product card.
+
+Composition: centered, square format (1:1), optimized for Shopify/product card display. Must leave clean margins for cropping and scaling.
+
+Style keywords: digital course, remote training, SaaS UI, premium learning system, strategic consulting aesthetic, modern, minimal, high-end, floating interface.
+
+Output format: high-resolution JPG, no watermark, no physical objects, no books, no paper textures.

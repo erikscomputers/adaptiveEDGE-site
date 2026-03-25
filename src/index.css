@@ -7,33 +7,35 @@
 @layer base {
   :root, .dark {
     /* AdaptivEdge Minimalist Corporate Design System */
-    --primary: 46 0% 18%;
-    --primary-foreground: 0 0% 96%;
-    
-    --accent: 14 100% 53%;
-    --accent-foreground: 0 0% 100%;
-    
---secondary: 186 60% 29%;
+ 
+--background: 220 20% 7%;
+--foreground: 210 20% 92%;
+
+--card: 220 20% 10%;
+--card-foreground: 210 20% 92%;
+
+--popover: 220 20% 10%;
+--popover-foreground: 210 20% 92%;
+
+--primary: 220 15% 18%;
+--primary-foreground: 210 20% 92%;
+
+--secondary: 220 90% 60%; /* BLUE */
 --secondary-foreground: 0 0% 100%;
-    
-    --background: 46 0% 18%;
-    --foreground: 0 0% 96%;
-    
-    --card: 46 0% 22%;
-    --card-foreground: 0 0% 96%;
-    
-    --border: 46 0% 30%;
-    --input: 46 0% 25%;
-    --ring: 14 100% 53%;
-    
-    --muted: 46 0% 25%;
-    --muted-foreground: 0 0% 70%;
-    
-    --popover: 46 0% 22%;
-    --popover-foreground: 0 0% 96%;
-    
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+
+--accent: 14 100% 53%; /* ORANGE */
+--accent-foreground: 0 0% 100%;
+
+--border: 220 15% 18%;
+--input: 220 15% 16%;
+
+--muted: 220 15% 16%;
+--muted-foreground: 215 15% 65%;
+
+--ring: 220 90% 60%;
+
+--destructive: 0 84% 60%;
+--destructive-foreground: 0 0% 100%;
 
     --radius: 0.5rem;
 
