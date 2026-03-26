@@ -2,30 +2,39 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Target, Compass, Users } from 'lucide-react';
-import { Link } from 'react-router-dom'; // ✅ ADD THIS
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BackToTop from '@/components/BackToTop.jsx';
 import { Button } from '@/components/ui/button';
 
 const AboutPage = () => {
-  const philosophyPoints = [{
-    icon: Target,
-    title: 'Clarity',
-    description: 'The best decisions come from clarity, not pressure. We help you build the mindset and frameworks needed to adapt quickly, stay focused, and strategize with confidence — even in high-stakes situations.'
-  }, {
-    icon: Compass,
-    title: 'Strategic Action',
-    description: 'Planning without purpose achieves little. We teach practical, repeatable systems that translate understanding into effective strategies, smarter decisions, and tangible results.'
-  }, {
-    icon: Users,
-    title: 'Sustainable Capability',
-    description: 'Quick fixes create dependency. We build lasting capability, equipping individuals and teams to solve problems, adapt to new challenges, and continue improving long after our guidance ends.'
-  }];
-  return <>
+  const philosophyPoints = [
+    {
+      icon: Target,
+      title: 'Clarity',
+      description: 'Think clearly under pressure and cut through noise to make better decisions.'
+    },
+    {
+      icon: Compass,
+      title: 'Strategic Action',
+      description: 'Turn understanding into deliberate, effective action that produces results.'
+    },
+    {
+      icon: Users,
+      title: 'Adaptability',
+      description: 'Adjust quickly in unfamiliar situations and stay effective as conditions change.'
+    }
+  ];
+
+  return (
+    <>
       <Helmet>
-        <title>About AdaptivEdge - Our Mission & Approach</title>
-        <meta name="description" content="We help people navigate uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge." />
+        <title>About AdaptivEdge</title>
+        <meta
+          name="description"
+          content="Built from real-world field experience. AdaptivEdge helps you think clearly, act effectively, and handle uncertainty."
+        />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
@@ -34,21 +43,71 @@ const AboutPage = () => {
         {/* Hero Section */}
         <section className="py-6 md:py-10 bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="container-custom text-center">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} animate={{
-            opacity: 1,
-            y: 0
-          }} transition={{
-            duration: 0.6
-          }} className="max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-3xl mx-auto"
+            >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-  <span className="text-secondary">About</span> AdaptivEdge
-</h1>
+                <span className="text-secondary">About</span> AdaptivEdge
+              </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                We help people navigate uncertainty by building the ability to adapt quickly, strategize effectively, and prevail with an edge.
+                Built from real-world field experience.
               </p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* First Section */}
+        <section className="section-padding bg-transparent">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed text-muted-foreground"
+            >
+              <p>I’m a traveling field technician.</p>
+
+              <p>
+                I work in unfamiliar environments, under time pressure,
+                solving real problems with real consequences.
+              </p>
+
+              <p>
+                Over time, that shaped how I think, adapt, and make decisions.
+              </p>
+
+              <p>AdaptivEdge comes from that experience.</p>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Second Section */}
+        <section className="section-padding bg-card/40 backdrop-blur-sm border-y border-border/50">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto text-center"
+            >
+              <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
+                What this is
+              </h2>
+
+              <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+                This is not theory.
+              </p>
+
+              <div className="space-y-2 text-lg text-muted-foreground">
+                <p>- real situations</p>
+                <p>- real pressure</p>
+                <p>- real outcomes</p>
+              </div>
             </motion.div>
           </div>
         </section>
@@ -56,70 +115,51 @@ const AboutPage = () => {
         {/* Mission Section */}
         <section className="section-padding bg-transparent">
           <div className="container-custom">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.5
-          }} className="max-w-3xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto text-center"
+            >
               <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
-                Our mission
+                Mission
               </h2>
-              <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-                <p>
-                  In a world of constant change and complexity, success comes down to one thing: the ability to adapt, think strategically, and maintain a competitive edge. Most individuals and organizations struggle to keep pace because they lack structured, repeatable systems to build these capabilities.
-                </p>
-                <p>
-                  AdaptivEdge exists to change that. We provide practical frameworks, proven methodologies, and expert guidance that help individuals and teams respond to uncertainty with clarity, confidence, and control. Our approach is grounded in real-world application — not abstract theory.
-                </p>
-                <p>
-                  We believe adaptability is not a fixed trait — it is a developable skill. Through deliberate practice, structured thinking, and continuous improvement, anyone can learn to navigate complexity and consistently perform at a higher level.
-                </p>
+
+              <div className="space-y-2 text-lg text-muted-foreground">
+                <p>- think clearly</p>
+                <p>- act effectively</p>
+                <p>- handle uncertainty</p>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* Philosophy Section */}
+        {/* Principles Section */}
         <section className="section-padding bg-card/40 backdrop-blur-sm border-y border-border/50">
           <div className="container-custom">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.5
-          }} className="text-center mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-12"
+            >
               <h2 className="text-3xl font-bold leading-tight mb-4 text-foreground">
-                Our approach
+                Principles
               </h2>
-              <p className="text-lg leading-relaxed text-muted-foreground max-w-[65ch] mx-auto">
-                Three core principles guide everything we do.
-              </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {philosophyPoints.map((point, index) => <motion.div key={index} initial={{
-              opacity: 0,
-              y: 20
-            }} whileInView={{
-              opacity: 1,
-              y: 0
-            }} viewport={{
-              once: true
-            }} transition={{
-              duration: 0.5,
-              delay: index * 0.1
-            }} className="card-minimal p-8">
+              {philosophyPoints.map((point, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="card-minimal p-8"
+                >
                   <div className="mb-6">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary/10 text-secondary">
                       <point.icon className="h-6 w-6" />
@@ -131,54 +171,48 @@ const AboutPage = () => {
                   <p className="text-base leading-relaxed text-muted-foreground">
                     {point.description}
                   </p>
-                </motion.div>)}
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
-{/* Trust Building Section */}
-<section className="section-padding bg-transparent">
-  <div className="container-custom">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="max-w-3xl mx-auto"
-    >
-      <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
-        Why work with us
-      </h2>
+        {/* Final CTA Section */}
+        <section className="section-padding bg-transparent">
+          <div className="container-custom">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="max-w-3xl mx-auto text-center"
+            >
+              <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
+                New here?
+              </h2>
 
-      <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-        <p>
-          We work with teams operating across boundaries, professionals building in fast-moving environments, and individuals looking to improve their lives. Our clients share one thing in common: they understand that adaptability, strategic thinking, and a leading edge are what drive lasting performance.
-        </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                <Button asChild className="button-secondary px-6 rounded-full">
+                  <Link to="/scenarios">Try a Scenario</Link>
+                </Button>
 
-        <p>
-          What sets us apart is our focus on practical, real-world application. We don’t deliver generic advice or one-size-fits-all solutions. Instead, we work closely with you to understand your challenges, design targeted strategies, and drive measurable outcomes.
-        </p>
+                <Button asChild className="button-secondary px-6 rounded-full">
+                  <Link to="/guides">Explore Field Guides</Link>
+                </Button>
 
-        <p>
-          Our goal is not to create dependency but to build capability. When our work is complete, you’ll have the frameworks, skills, and confidence to adapt, strategize, and prevail on your own — sustaining your edge long after our engagement ends.
-        </p>
-      </div> {/* ✅ THIS WAS MISSING */}
+                <Button asChild className="button-secondary px-6 rounded-full">
+                  <Link to="/training">Enter Training</Link>
+                </Button>
+              </div>
+            </motion.div>
+          </div>
+        </section>
 
-      <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 border-t border-border/30 mt-10">
-        <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
-          <Link to="/contact">
-            Contact Us
-          </Link>
-        </Button>
-      </div>
-
-    </motion.div>
-  </div>
-</section>
-
-<Footer />
+        <Footer />
         <BackToTop />
       </div>
-    </>;
+    </>
+  );
 };
+
 export default AboutPage;
