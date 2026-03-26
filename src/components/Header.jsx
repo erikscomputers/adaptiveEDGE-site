@@ -9,9 +9,11 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Shop', path: '/shop' },
-    { name: 'Corporate Solutions', path: '/corporate-solutions' },
-    { name: 'Personal Development', path: '/personal-development' },
+    { name: 'Training', path: '/training' },
+    { name: 'Scenarios', path: '/scenarios' },
+    { name: 'Field Guides', path: '/field-guides' },
+    { name: 'Guided Training', path: '/guided-training' },
+    { name: 'Teams', path: '/teams' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -54,12 +56,12 @@ const Header = () => {
 
           {/* Right: CTA */}
           <div className="flex items-center justify-self-end">
-            <Button 
-              asChild 
-              className="button-secondary px-6 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
-            >
-              <Link to="/shop">View Products</Link>
-            </Button>
+<Button 
+  asChild 
+  className="button-secondary px-6 rounded-full shadow-sm hover:shadow-md transition-all duration-300 hover:bg-[var(--accent)] hover:text-white"
+>
+  <Link to="/training">Enter Training</Link>
+</Button>
           </div>
         </div>
 

@@ -4,11 +4,13 @@ import { Toaster } from 'sonner';
 import ScrollToTop from '@/components/ScrollToTop.jsx';
 
 import HomePage from '@/pages/HomePage.jsx';
-import CorporateSolutionsPage from '@/pages/CorporateSolutionsPage.jsx';
-import PersonalDevelopmentPage from '@/pages/PersonalDevelopmentPage.jsx';
+import GuidedTrainingPage from '@/pages/GuidedTrainingPage.jsx';
+import ScenariosPage from '@/pages/ScenariosPage.jsx';
+import TeamsPage from '@/pages/TeamsPage.jsx';
+import TrainingPage from '@/pages/TrainingPage.jsx';
 import AboutPage from '@/pages/AboutPage.jsx';
 import ContactPage from '@/pages/ContactPage.jsx';
-import ShopPage from '@/pages/ShopPage.jsx';
+import FieldGuidesPage from '@/pages/FieldGuidesPage.jsx';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage.jsx';
 import TermsOfServicePage from '@/pages/TermsOfServicePage.jsx';
 
@@ -23,10 +25,15 @@ function App() {
         <Toaster position="top-right" />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/corporate-solutions" element={<CorporateSolutionsPage />} />
-          <Route path="/personal-development" element={<PersonalDevelopmentPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/field-guides" element={<FieldGuidesPage />} />
+          <Route path="/training" element={<TrainingPage />} />
+          <Route path="/scenarios" element={<ScenariosPage />} />
+          <Route path="/guided-training" element={<GuidedTrainingPage />} />
+          <Route path="/teams" element={<TeamsPage />} />
+            
+
+
 
           {/* ✅ ADD THIS ROUTE */}
           <Route path="/product/:slug" element={<ProductPage />} />
