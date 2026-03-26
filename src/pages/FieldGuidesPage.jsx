@@ -19,7 +19,7 @@ const ShopPage = () => {
   return (
     <>
       <Helmet>
-        <title>AdaptivEdge Shop</title>
+        <title>Field Guides</title>
         <meta
           name="description"
           content="Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level."
@@ -39,7 +39,7 @@ const ShopPage = () => {
               className="max-w-3xl mx-auto"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
-                AdaptivEdge <span className="text-secondary">Shop</span>
+                Field <span className="text-secondary">Guides</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
                 Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level.

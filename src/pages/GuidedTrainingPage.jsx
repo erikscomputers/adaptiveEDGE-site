@@ -146,11 +146,11 @@ const GuidedTrainingPage = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl font-bold mb-6 text-foreground">
-                Apply for Guided Training
+                Request Guided Training
               </h2>
 
               <Button asChild className="button-secondary px-8 py-6 rounded-full">
-                <Link to="/contact">Apply Now</Link>
+                <Link to="/contact">Request</Link>
               </Button>
             </motion.div>
           </div>
