@@ -26,9 +26,9 @@ export default function BackToTop() {
     text-white text-sm font-medium
     transition-all duration-300
     hover:-translate-y-1
-    ${visible ? "opacity-100 scale-100" : "opacity-0 scale-75 pointer-events-none"}
+    ${visible ? "opacity-100 scale-100" : "opacity-0 scale-110 pointer-events-none"}
   `}
-  style={{ backgroundColor: "#1E6F78" }}
+  style={{ backgroundColor: "#3A7DFF" }}
 >
   <span>↑</span>
   Back to the top
