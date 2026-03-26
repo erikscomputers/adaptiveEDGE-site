@@ -227,13 +227,14 @@ const AboutPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
               {ctaButtons.map((btn, i) => (
-                <Button
-                  key={i}
-                  className="w-full sm:w-auto button-secondary group/btn hover:bg-[hsl(var(--accent))] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                  onClick={() => navigate(btn.link)}
-                >
-                  {btn.label}
-                </Button>
+                <div key={i} className="w-full sm:w-auto">
+                  <Button
+                    className="w-full button-secondary group/btn hover:bg-[hsl(var(--accent))] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
+                    onClick={() => navigate(btn.link)}
+                  >
+                    {btn.label}
+                  </Button>
+                </div>
               ))}
             </div>
           </div>
