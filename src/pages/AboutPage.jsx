@@ -73,7 +73,10 @@ const AboutPage = () => {
               </h1>
 
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Built in the field. Refined under <span className="text-foreground font-medium">pressure</span>. Designed for people who don’t have the luxury of hesitation.
+                Built in the field. Refined under{' '}
+                <span className="transition-colors duration-300 hover:text-secondary">
+                  pressure
+                </span>. Designed for people who don’t have the luxury of hesitation.
               </p>
             </motion.div>
           </div>
@@ -99,9 +102,10 @@ const AboutPage = () => {
               ].map((text, i) => (
                 <motion.p
                   key={i}
-                  whileHover={{ x: 8 }}
+                  initial={{ opacity: 0.6 }}
+                  whileHover={{ x: 10, opacity: 1 }}
                   transition={{ type: 'spring', stiffness: 180 }}
-                  className="cursor-default hover:cursor-pointer"
+                  className="cursor-pointer transition-colors duration-300 hover:text-foreground"
                 >
                   {text}
                 </motion.p>
@@ -216,16 +220,14 @@ const AboutPage = () => {
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
               {[
                 { label: 'Try a Scenario', link: '/scenarios' },
-                { label: 'Explore Field Guides', link: '/guides' },
+                { label: 'Explore Field Guides', link: '/field-guides' },
                 { label: 'Enter Training', link: '/training' }
               ].map((btn, i) => (
-                <Button
-                  key={i}
-                  asChild
-                  className="button-secondary px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                >
-                  <Link to={btn.link}>{btn.label}</Link>
-                </Button>
+                <Link key={i} to={btn.link}>
+                  <Button className="button-secondary px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+                    {btn.label}
+                  </Button>
+                </Link>
               ))}
             </div>
           </div>
