@@ -13,17 +13,17 @@ const AboutPage = () => {
     {
       icon: Target,
       title: 'Clarity',
-      description: 'Think clearly under pressure and cut through noise to make better decisions.'
+      description: 'Clarity isn’t about knowing everything — it’s about cutting through noise and focusing on what actually matters when time is limited.'
     },
     {
       icon: Compass,
       title: 'Strategic Action',
-      description: 'Turn understanding into deliberate, effective action that produces results.'
+      description: 'Action is only valuable when it’s deliberate. Move with intent, not impulse, and make decisions that hold up under pressure.'
     },
     {
       icon: Users,
       title: 'Adaptability',
-      description: 'Adjust quickly in unfamiliar situations and stay effective as conditions change.'
+      description: 'Conditions change. Plans fail. The ability to adjust quickly without losing effectiveness is what separates reaction from control.'
     }
   ];
 
@@ -53,7 +53,7 @@ const AboutPage = () => {
                 <span className="text-secondary">About</span> AdaptivEdge
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Built from real-world field experience.
+                Built in the field. Refined under pressure. Designed for people who don’t have the luxury of hesitation.
               </p>
             </motion.div>
           </div>
@@ -72,15 +72,21 @@ const AboutPage = () => {
               <p>I’m a traveling field technician.</p>
 
               <p>
-                I work in unfamiliar environments, under time pressure,
-                solving real problems with real consequences.
+                My work doesn’t happen in controlled environments. It happens in places I’ve never been, 
+                with systems I didn’t build, under timelines that don’t bend.
               </p>
 
               <p>
-                Over time, that shaped how I think, adapt, and make decisions.
+                When something breaks, there’s no time for overthinking. You assess, adapt, and act — or you fail.
               </p>
 
-              <p>AdaptivEdge comes from that experience.</p>
+              <p>
+                Over time, that pressure rewires you. You stop chasing perfect answers and start building reliable judgment.
+              </p>
+
+              <p>
+                AdaptivEdge is built from that reality — not theory, not trends, but experience earned the hard way.
+              </p>
             </motion.div>
           </div>
         </section>
@@ -100,13 +106,13 @@ const AboutPage = () => {
               </h2>
 
               <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-                This is not theory.
+                This isn’t built in a classroom.
               </p>
 
               <div className="space-y-2 text-lg text-muted-foreground">
-                <p>- real situations</p>
-                <p>- real pressure</p>
-                <p>- real outcomes</p>
+                <p>• real environments</p>
+                <p>• real constraints</p>
+                <p>• real consequences</p>
               </div>
             </motion.div>
           </div>
@@ -126,10 +132,10 @@ const AboutPage = () => {
                 Mission
               </h2>
 
-              <div className="space-y-2 text-lg text-muted-foreground">
-                <p>- think clearly</p>
-                <p>- act effectively</p>
-                <p>- handle uncertainty</p>
+              <div className="space-y-3 text-lg text-muted-foreground">
+                <p>Think clearly when it matters.</p>
+                <p>Act with purpose, not hesitation.</p>
+                <p>Stay effective when nothing goes to plan.</p>
               </div>
             </motion.div>
           </div>
@@ -188,8 +194,12 @@ const AboutPage = () => {
               className="max-w-3xl mx-auto text-center"
             >
               <h2 className="text-3xl font-bold leading-tight mb-6 text-foreground">
-                New here?
+                Start where you are.
               </h2>
+
+              <p className="text-muted-foreground mb-6">
+                No theory. No fluff. Just tools you can actually use.
+              </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                 <Button asChild className="button-secondary px-6 rounded-full">
