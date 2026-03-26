@@ -93,12 +93,12 @@ const ShopPage = () => {
 
                     {/* ✅ UPDATED SECTION */}
                     <div className="mt-auto pt-6 border-t border-border">
-                      <Button
-                        className="w-full button-primary group/btn"
-                        onClick={() => navigate(`/product/${product.slug}`)}
-                      >
-                        Learn More
-                      </Button>
+                     <Button
+  className="w-full button-secondary group/btn hover:bg-[hsl(var(--accent))]"
+  onClick={() => navigate(`/product/${product.slug}`)}
+>
+  Learn More
+</Button>
                     </div>
 
                   </div>

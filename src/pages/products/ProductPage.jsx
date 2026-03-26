@@ -110,7 +110,7 @@ const product = products.find((p) => p.slug === slug);
                       ← Back to Shop
                     </Button>
 
-                    <Button className="button-primary w-full md:w-auto">
+                    <Button className="button-secondary w-full md:w-auto">
                       Purchase
                     </Button>
                   </div>
