@@ -56,7 +56,7 @@ const Header = () => {
           <div className="flex items-center justify-self-end">
             <Button 
               asChild 
-              className="button-primary px-6 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
+              className="button-secondary px-6 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
             >
               <Link to="/shop">View Products</Link>
             </Button>
