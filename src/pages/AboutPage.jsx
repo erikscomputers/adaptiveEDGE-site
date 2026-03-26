@@ -2,13 +2,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Target, Compass, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import BackToTop from '@/components/BackToTop.jsx';
 import { Button } from '@/components/ui/button';
 
 const AboutPage = () => {
+  const navigate = useNavigate();
+
   const philosophyPoints = [
     {
       icon: Target,
@@ -40,6 +42,12 @@ const AboutPage = () => {
     'real environments',
     'real constraints',
     'real consequences'
+  ];
+
+  const ctaButtons = [
+    { label: 'Try a Scenario', link: '/scenarios' },
+    { label: 'Explore Field Guides', link: '/field-guides' },
+    { label: 'Enter Training', link: '/training' }
   ];
 
   return (
@@ -105,7 +113,7 @@ const AboutPage = () => {
                   initial={{ opacity: 0.6 }}
                   whileHover={{ x: 10, opacity: 1 }}
                   transition={{ type: 'spring', stiffness: 180 }}
-                  className="cursor-pointer transition-colors duration-300 hover:text-foreground"
+                  className="cursor-default transition-colors duration-300 hover:text-foreground"
                 >
                   {text}
                 </motion.p>
@@ -133,7 +141,7 @@ const AboutPage = () => {
                   key={i}
                   whileHover={{ scale: 1.06, y: -6 }}
                   transition={{ type: 'spring', stiffness: 180 }}
-                  className="p-6 rounded-xl bg-card/50 border border-border/50 backdrop-blur-sm hover:shadow-lg hover:shadow-secondary/20 cursor-pointer"
+                  className="p-6 rounded-xl bg-card/50 border border-border/50 backdrop-blur-sm hover:shadow-lg hover:shadow-secondary/20 cursor-default"
                 >
                   {item}
                 </motion.div>
@@ -183,7 +191,7 @@ const AboutPage = () => {
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.15, duration: 0.7 }}
-                  className="group p-8 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-3 hover:shadow-xl hover:shadow-secondary/20 cursor-pointer"
+                  className="group p-8 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm transition-all duration-300 hover:-translate-y-3 hover:shadow-xl hover:shadow-secondary/20 cursor-default"
                 >
                   <div className="mb-6">
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-secondary/10 text-secondary transition-all duration-300 group-hover:scale-110 group-hover:rotate-3">
@@ -218,16 +226,14 @@ const AboutPage = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-              {[
-                { label: 'Try a Scenario', link: '/scenarios' },
-                { label: 'Explore Field Guides', link: '/field-guides' },
-                { label: 'Enter Training', link: '/training' }
-              ].map((btn, i) => (
-                <Link key={i} to={btn.link}>
-                  <Button className="button-secondary px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
-                    {btn.label}
-                  </Button>
-                </Link>
+              {ctaButtons.map((btn, i) => (
+                <Button
+                  key={i}
+                  className="w-full sm:w-auto button-secondary group/btn hover:bg-[hsl(var(--accent))] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
+                  onClick={() => navigate(btn.link)}
+                >
+                  {btn.label}
+                </Button>
               ))}
             </div>
           </div>
