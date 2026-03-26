@@ -65,24 +65,22 @@ const AboutPage = () => {
 
         {/* Hero */}
         <section className="py-20 bg-card/20 backdrop-blur-sm border-b border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
-          <div className="container-custom text-center">
+          <div className="container-custom text-center relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: 'easeOut' }}
-              className="max-w-3xl mx-auto relative"
+              className="max-w-3xl mx-auto"
             >
-              <div className="absolute inset-0 -z-10 blur-3xl opacity-20 bg-secondary rounded-full" />
-
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
                 <span className="text-secondary">About</span> AdaptivEdge
               </h1>
 
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
                 Built in the field. Refined under{' '}
-                <span className="transition-colors duration-300 hover:text-secondary">
+                <span className="transition-colors duration-300 hover:text-secondary cursor-default">
                   pressure
                 </span>. Designed for people who don’t have the luxury of hesitation.
               </p>
@@ -92,7 +90,7 @@ const AboutPage = () => {
 
         {/* Story */}
         <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
           <div className="container-custom">
             <motion.div
@@ -124,9 +122,9 @@ const AboutPage = () => {
 
         {/* What this is */}
         <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
-          <div className="container-custom text-center">
+          <div className="container-custom text-center relative z-10">
             <h2 className="text-3xl font-bold mb-6 text-foreground">
               What this is
             </h2>
@@ -152,9 +150,9 @@ const AboutPage = () => {
 
         {/* Mission */}
         <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
-          <div className="container-custom text-center">
+          <div className="container-custom text-center relative z-10">
             <h2 className="text-3xl font-bold mb-10 text-foreground">
               Mission
             </h2>
@@ -177,9 +175,9 @@ const AboutPage = () => {
 
         {/* Principles */}
         <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
-          <div className="container-custom">
+          <div className="container-custom relative z-10">
             <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
               Principles
             </h2>
@@ -214,9 +212,9 @@ const AboutPage = () => {
 
         {/* CTA */}
         <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
-          <div className="container-custom text-center">
+          <div className="container-custom text-center relative z-10">
             <h2 className="text-3xl font-bold mb-6 text-foreground">
               Start where you are.
             </h2>
@@ -227,7 +225,7 @@ const AboutPage = () => {
 
             <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
               {ctaButtons.map((btn, i) => (
-                <div key={i} className="w-full sm:w-auto">
+                <div key={i} className="w-full sm:w-auto pointer-events-auto">
                   <Button
                     className="w-full button-secondary group/btn hover:bg-[hsl(var(--accent))] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
                     onClick={() => navigate(btn.link)}
