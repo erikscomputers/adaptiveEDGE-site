@@ -96,19 +96,20 @@
     @apply bg-accent text-accent-foreground hover:bg-accent/90 transition-colors duration-200 rounded-lg font-medium active:scale-[0.98];
   }
 
+/* base */
 .button-secondary {
-  @apply bg-secondary text-secondary-foreground 
-         transition-all duration-300 ease-out;
+  @apply bg-secondary text-secondary-foreground transition-all duration-300 ease-out;
 }
 
+/* FORCE hover override */
 .button-secondary:hover {
-  background-color: hsl(var(--accent));
+  background-color: hsl(var(--accent)) !important;
   transform: scale(1.05);
   box-shadow: 0 12px 30px hsl(var(--secondary) / 0.25);
 }
 
+/* optional press feel */
 .button-secondary:active {
   transform: scale(0.98);
-  box-shadow: 0 6px 15px hsl(var(--secondary) / 0.15);
 }
 }
