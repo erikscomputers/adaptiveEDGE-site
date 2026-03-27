@@ -58,7 +58,7 @@ const Header = () => {
   asChild 
   className="button-secondary px-6 rounded-full shadow-sm hover:shadow-md transition-all duration-300 hover:bg-[var(--accent)] hover:text-white"
 >
-  <Link to="/training">Enter Training</Link>
+  <Link to="/field-guides">View Products</Link>
 </Button>
           </div>
         </div>
