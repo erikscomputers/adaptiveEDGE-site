@@ -2,27 +2,13 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Shield, Zap, Target, ArrowRight } from 'lucide-react';
+import { Shield, Zap } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
-import ValuePropositionCard from '@/components/ValuePropositionCard.jsx';
 import { Button } from '@/components/ui/button';
 import BackToTop from '@/components/BackToTop.jsx';
 
 const HomePage = () => {
-  const valueProps = [
-    {
-      icon: Shield,
-      title: 'Operational resilience',
-      description: 'Build systems and mindsets that perform under pressure, adapt to disruption, and recover quickly from setbacks.'
-    },
-    {
-      icon: Zap,
-      title: 'Strategic adaptability',
-      description: 'Recognize shifting conditions early, strategize your approach with intent, and capitalize on emerging opportunities before others do.'
-    }
-  ];
-
   return (
     <>
       <Helmet>
@@ -36,50 +22,74 @@ const HomePage = () => {
       <div className="min-h-screen flex flex-col bg-transparent">
         <Header />
 
-        {/* 1. HERO SECTION */}
-        <section className="relative min-h-[85dvh] flex items-center justify-center overflow-hidden bg-transparent border-b border-border/50">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(26,188,156,0.05)_0%,transparent_50%)] pointer-events-none"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,106,61,0.05)_0%,transparent_50%)] pointer-events-none"></div>
+        {/* HERO */}
+        <section className="relative min-h-[85dvh] flex items-center justify-center overflow-hidden border-b border-border/50">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
-          <div className="relative z-10 container-custom text-center flex flex-col items-center">
+          <div className="relative z-10 container-custom text-center">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              transition={{ duration: 0.9, ease: 'easeOut' }}
               className="max-w-4xl mx-auto"
             >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-foreground tracking-tight">
-                Train how to think when there’s no clear answer.
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground tracking-tight">
+                Train how to think when there’s no{' '}
+                <span className="transition-colors duration-300 hover:text-secondary">
+                  clear answer
+                </span>.
               </h1>
-              <p className="text-lg md:text-xl leading-relaxed max-w-[60ch] mx-auto mb-10 text-muted-foreground">
+
+              <p className="text-lg md:text-xl max-w-[60ch] mx-auto mb-10 text-muted-foreground leading-relaxed">
                 Real-world problem-solving built from field experience. Stay clear, act strategically, and handle uncertainty with control.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
-                  <Link to="/training">Enter Training</Link>
-                </Button>
 
-                <Button asChild size="lg" className="button-secondary px-8 py-6 text-base">
-                  <Link to="/scenarios">Try a Scenario</Link>
-                </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                {[{ to: "/training", label: "Enter Training" }, { to: "/scenarios", label: "Try a Scenario" }].map((btn, i) => (
+                  <Button
+                    key={i}
+                    asChild
+                    size="lg"
+                    className="button-secondary px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
+                  >
+                    <Link to={btn.to}>{btn.label}</Link>
+                  </Button>
+                ))}
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* 2. REALITY HOOK + WHAT THIS IS */}
-        <section className="section-padding bg-card/40 backdrop-blur-sm border-b border-border/50">
+        {/* REALITY HOOK */}
+        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-b border-border/50 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
+
           <div className="container-custom">
-            <motion.div className="text-center max-w-3xl mx-auto mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="text-center max-w-3xl mx-auto mb-16"
+            >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
                 When things get unclear:
               </h2>
 
               <div className="space-y-2 text-lg text-muted-foreground mb-8">
-                <p>- Plans fall apart</p>
-                <p>- Information is incomplete</p>
-                <p>- People complicate things</p>
-                <p>- Time runs out</p>
+                {[
+                  'Plans fall apart',
+                  'Information is incomplete',
+                  'People complicate things',
+                  'Time runs out'
+                ].map((text, i) => (
+                  <motion.p
+                    key={i}
+                    whileHover={{ x: 8 }}
+                    className="transition-colors duration-300 hover:text-foreground cursor-default"
+                  >
+                    - {text}
+                  </motion.p>
+                ))}
               </div>
 
               <p className="text-xl font-semibold text-foreground">
@@ -87,14 +97,18 @@ const HomePage = () => {
               </p>
             </motion.div>
 
-            {/* WHAT THIS IS GRID */}
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: 'Clarity Under Pressure', desc: 'Make decisions without overthinking' },
                 { title: 'Structured Thinking', desc: 'Use repeatable systems, not guesswork' },
                 { title: 'Adaptability', desc: 'Adjust fast when conditions change' }
               ].map((item, i) => (
-                <motion.div key={i} className="card-minimal p-8 text-center">
+                <motion.div
+                  key={i}
+                  whileHover={{ y: -8, scale: 1.04 }}
+                  transition={{ type: 'spring', stiffness: 180 }}
+                  className="card-minimal p-8 text-center transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
+                >
                   <h3 className="text-xl font-semibold mb-3 text-foreground">{item.title}</h3>
                   <p className="text-muted-foreground">{item.desc}</p>
                 </motion.div>
@@ -103,8 +117,10 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* 3. HOW IT WORKS */}
-        <section className="section-padding bg-transparent">
+        {/* HOW IT WORKS */}
+        <section className="section-padding py-20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
+
           <div className="container-custom text-center">
             <h2 className="text-3xl font-bold mb-12 text-foreground">Train Like It’s Real</h2>
 
@@ -114,19 +130,31 @@ const HomePage = () => {
                 { title: 'Make a Decision', desc: 'Act with limited information' },
                 { title: 'See How an Expert Thinks', desc: 'Understand the reasoning behind it' }
               ].map((step, i) => (
-                <div key={i} className="card-minimal p-6 text-center">
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.15 }}
+                  whileHover={{ y: -6 }}
+                  className="card-minimal p-6 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20"
+                >
                   <h3 className="text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
                   <p className="text-sm text-muted-foreground">{step.desc}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* 4. INTERACTIVE PREVIEW */}
-        <section className="section-padding bg-card/40 backdrop-blur-sm border-y border-border/50">
+        {/* INTERACTIVE */}
+        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
+
           <div className="container-custom max-w-2xl mx-auto">
-            <div className="card-minimal p-8">
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="card-minimal p-8 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
+            >
               <p className="text-muted-foreground mb-4">Scenario:</p>
               <p className="text-foreground mb-6">
                 “You’re behind schedule. The system isn’t working. The client is watching.”
@@ -134,21 +162,35 @@ const HomePage = () => {
 
               <p className="mb-4 text-muted-foreground">What do you do first?</p>
               <div className="space-y-2 mb-6 text-muted-foreground">
-                <p>( ) Fix immediately</p>
-                <p>( ) Communicate first</p>
-                <p>( ) Diagnose first</p>
+                {['Fix immediately', 'Communicate first', 'Diagnose first'].map((opt, i) => (
+                  <p key={i} className="hover:text-foreground transition-colors cursor-default">
+                    ( ) {opt}
+                  </p>
+                ))}
               </div>
 
-              <Button className="button-secondary px-6 rounded-full">Submit</Button>
-            </div>
+              <Button className="button-secondary px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+                Submit
+              </Button>
+            </motion.div>
           </div>
         </section>
 
-        {/* 5. BUILT IN THE FIELD */}
-        <section className="section-padding bg-transparent">
+        {/* BUILT IN FIELD */}
+        <section className="section-padding py-20 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
+
           <div className="container-custom grid md:grid-cols-2 gap-12 items-center">
-            <div className="h-64 bg-card/30 rounded-xl" /> {/* placeholder visual */}
-            <div>
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              className="h-64 bg-card/30 rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
+            />
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7 }}
+            >
               <h2 className="text-3xl font-bold mb-6 text-foreground">Built in the Field</h2>
               <p className="text-muted-foreground leading-relaxed">
                 I don’t teach theory.<br /><br />
@@ -156,12 +198,14 @@ const HomePage = () => {
                 solving real problems with real consequences.<br /><br />
                 This system comes from that experience.
               </p>
-            </div>
+            </motion.div>
           </div>
         </section>
 
-        {/* 6. TRAINING PATHS */}
-        <section className="section-padding bg-card/40 backdrop-blur-sm border-y border-border/50">
+        {/* TRAINING PATHS */}
+        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
+
           <div className="container-custom">
             <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Choose Your Training Path</h2>
 
@@ -172,30 +216,40 @@ const HomePage = () => {
                 { title: 'Guided Training', desc: 'Work directly with me', link: '/guided-training', cta: 'Learn More' },
                 { title: 'Team Training', desc: 'Train teams for real-world performance', link: '/teams', cta: 'For Teams' }
               ].map((item, i) => (
-                <div key={i} className="card-minimal p-6">
+                <motion.div
+                  key={i}
+                  whileHover={{ y: -8, scale: 1.04 }}
+                  transition={{ type: 'spring', stiffness: 180 }}
+                  className="card-minimal p-6 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
+                >
                   <h3 className="text-lg font-semibold mb-2 text-foreground">{item.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{item.desc}</p>
-                  <Button asChild className="button-secondary px-5 rounded-full">
+                  <Button asChild className="button-secondary px-5 rounded-full transition-all duration-300 hover:scale-105">
                     <Link to={item.link}>{item.cta}</Link>
                   </Button>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* 7. FINAL CTA */}
-        <section className="section-padding bg-transparent text-center">
+        {/* FINAL CTA */}
+        <section className="section-padding py-20 text-center relative overflow-hidden">
+          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
+
           <div className="container-custom">
             <h2 className="text-3xl font-bold mb-6 text-foreground">Get better at handling reality.</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild className="button-secondary px-8 py-6 rounded-full">
-                <Link to="/training">Start Training</Link>
-              </Button>
 
-              <Button asChild className="button-secondary px-8 py-6 rounded-full">
-                <Link to="/scenarios">Try a Scenario</Link>
-              </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {[{ to: "/training", label: "Start Training" }, { to: "/scenarios", label: "Try a Scenario" }].map((btn, i) => (
+                <Button
+                  key={i}
+                  asChild
+                  className="button-secondary px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
+                >
+                  <Link to={btn.to}>{btn.label}</Link>
+                </Button>
+              ))}
             </div>
           </div>
         </section>
