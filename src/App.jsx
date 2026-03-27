@@ -13,8 +13,8 @@ import ContactPage from '@/pages/ContactPage.jsx';
 import FieldGuidesPage from '@/pages/FieldGuidesPage.jsx';
 import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage.jsx';
 import TermsOfServicePage from '@/pages/TermsOfServicePage.jsx';
-
-// ✅ ADD THIS IMPORT
+import CorporateSolutionsPage from '@/pages/CorporateSolutionsPage.jsx';
+import PersonalDevelopmentPage from '@/pages/PersonalDevelopmentPage.jsx';
 import ProductPage from '@/pages/products/ProductPage.jsx';
 
 function App() {
@@ -31,13 +31,11 @@ function App() {
           <Route path="/scenarios" element={<ScenariosPage />} />
           <Route path="/guided-training" element={<GuidedTrainingPage />} />
           <Route path="/teams" element={<TeamsPage />} />
-            
-
-
+          <Route path="/corporate-solutions" element={<CorporateSolutionsPage />} />
+          <Route path="/personal-development" element={<PersonalDevelopmentPage />} />
 
           {/* ✅ ADD THIS ROUTE */}
           <Route path="/product/:slug" element={<ProductPage />} />
-
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
