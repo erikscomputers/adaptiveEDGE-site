@@ -208,9 +208,9 @@ const HomePage = () => {
             <div className="grid md:grid-cols-4 gap-6">
               {[
                 { title: 'Training System', desc: 'Interactive scenarios + real-time guidance', link: '/training', cta: 'Enter Training' },
-                { title: 'Field Guides', desc: 'Handbooks, frameworks, and tools', link: '/shop', cta: 'Visit Shop' },
-                { title: 'Guided Training', desc: 'Work directly with me', link: '/guided-training', cta: 'Learn More' },
-                { title: 'Team Training', desc: 'Train teams for real-world performance', link: '/teams', cta: 'For Teams' }
+                { title: 'Field Guides', desc: 'Handbooks, frameworks, and tools', link: '/field-guides', cta: 'Visit Field Guides' },
+                { title: 'Guided Training', desc: 'Work directly with me ', link: '/guided-training', cta: 'Learn More' },
+                { title: 'Team Training', desc: 'Train teams for real-world performance', link: '/teams', cta: 'Learn More' }
               ].map((item, i) => (
                 <motion.div
                   key={i}
