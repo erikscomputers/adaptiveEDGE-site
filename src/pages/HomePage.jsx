@@ -14,7 +14,7 @@ const HomePage = () => {
         <title>AdaptivEdge - Adapt. Strategize. Prevail.</title>
         <meta
           name="description"
-          content="Helping you excel in uncertainty by developing the skills to adapt, strategize, and prevail — so you stay ahead of the curve."
+          content="Build the ability to adapt, think strategically, and perform under pressure—so you stay effective when it matters most."
         />
       </Helmet>
 
@@ -40,7 +40,7 @@ const HomePage = () => {
               </h1>
 
               <p className="text-lg md:text-xl max-w-[60ch] mx-auto mb-10 text-muted-foreground leading-relaxed">
-                Real-world problem-solving built from field experience. Stay clear, act strategically, and handle uncertainty with control.
+                Real-world problem-solving built from field experience. Stay clear, act with intent, and handle uncertainty without hesitation.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -68,24 +68,14 @@ const HomePage = () => {
               className="text-center max-w-3xl mx-auto mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                When things get unclear:
+                When things become unclear:
               </h2>
 
               <div className="space-y-2 text-lg text-muted-foreground mb-8">
-                {[
-                  'Plans fall apart',
-                  'Information is incomplete',
-                  'People complicate things',
-                  'Time runs out'
-                ].map((text, i) => (
-                  <motion.p
-                    key={i}
-                    whileHover={{ x: 8 }}
-                    className="transition-colors duration-300 hover:text-foreground cursor-default"
-                  >
-                    - {text}
-                  </motion.p>
-                ))}
+                <p>- Plans break down</p>
+                <p>- Information is incomplete</p>
+                <p>- People add complexity</p>
+                <p>- Time disappears</p>
               </div>
 
               <p className="text-xl font-semibold text-foreground">
@@ -96,8 +86,8 @@ const HomePage = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 { title: 'Clarity Under Pressure', desc: 'Make decisions without overthinking' },
-                { title: 'Structured Thinking', desc: 'Use repeatable systems, not guesswork' },
-                { title: 'Adaptability', desc: 'Adjust fast when conditions change' }
+                { title: 'Structured Thinking', desc: 'Rely on systems, not guesswork' },
+                { title: 'Adaptability', desc: 'Adjust quickly as conditions change' }
               ].map((item, i) => (
                 <motion.div
                   key={i}
@@ -121,23 +111,20 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold mb-12 text-foreground">Train Like It’s Real</h2>
 
             <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { title: 'Enter a Situation', desc: 'Real-world scenarios with pressure' },
-                { title: 'Make a Decision', desc: 'Act with limited information' },
-                { title: 'See How an Expert Thinks', desc: 'Understand the reasoning behind it' }
-              ].map((step, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 25 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.15 }}
-                  whileHover={{ y: -6 }}
-                  className="card-minimal p-6 transition-all duration-300 hover:shadow-lg hover:shadow-secondary/20"
-                >
-                  <h3 className="text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
-                  <p className="text-sm text-muted-foreground">{step.desc}</p>
-                </motion.div>
-              ))}
+              <div className="card-minimal p-6 text-center">
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Enter a Situation</h3>
+                <p className="text-sm text-muted-foreground">Step into real-world scenarios under pressure</p>
+              </div>
+
+              <div className="card-minimal p-6 text-center">
+                <h3 className="text-lg font-semibold mb-2 text-foreground">Make a Decision</h3>
+                <p className="text-sm text-muted-foreground">Act with limited and imperfect information</p>
+              </div>
+
+              <div className="card-minimal p-6 text-center">
+                <h3 className="text-lg font-semibold mb-2 text-foreground">See How an Expert Thinks</h3>
+                <p className="text-sm text-muted-foreground">Break down the reasoning behind effective action</p>
+              </div>
             </div>
           </div>
         </section>
@@ -147,10 +134,7 @@ const HomePage = () => {
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
           <div className="container-custom max-w-2xl mx-auto">
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="card-minimal p-8 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
-            >
+            <div className="card-minimal p-8">
               <p className="text-muted-foreground mb-4">Scenario:</p>
               <p className="text-foreground mb-6">
                 “You’re behind schedule. The system isn’t working. The client is watching.”
@@ -158,17 +142,15 @@ const HomePage = () => {
 
               <p className="mb-4 text-muted-foreground">What do you do first?</p>
               <div className="space-y-2 mb-6 text-muted-foreground">
-                {['Fix immediately', 'Communicate first', 'Diagnose first'].map((opt, i) => (
-                  <p key={i} className="hover:text-foreground transition-colors cursor-default">
-                    ( ) {opt}
-                  </p>
-                ))}
+                <p>( ) Fix immediately</p>
+                <p>( ) Communicate first</p>
+                <p>( ) Diagnose first</p>
               </div>
 
               <Button className="button-secondary px-6 rounded-full">
                 Submit
               </Button>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -177,24 +159,17 @@ const HomePage = () => {
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
 
           <div className="container-custom grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="h-64 bg-card/30 rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
-            />
+            <div className="h-64 bg-card/30 rounded-xl" />
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-            >
+            <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground">Built in the Field</h2>
               <p className="text-muted-foreground leading-relaxed">
-                I don’t teach theory.<br /><br />
-                I work in unfamiliar environments, under pressure,
+                This isn’t theory.<br /><br />
+                It’s built from working in unfamiliar environments, under pressure,
                 solving real problems with real consequences.<br /><br />
-                This system comes from that experience.
+                That experience is the system.
               </p>
-            </motion.div>
+            </div>
           </div>
         </section>
 
@@ -207,23 +182,18 @@ const HomePage = () => {
 
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { title: 'Training System', desc: 'Interactive scenarios + real-time guidance', link: '/training', cta: 'Enter Training' },
-                { title: 'Field Guides', desc: 'Handbooks, frameworks, and tools', link: '/field-guides', cta: 'Visit Field Guides' },
-                { title: 'Guided Training', desc: 'Work directly with me ', link: '/guided-training', cta: 'Learn More' },
-                { title: 'Team Training', desc: 'Train teams for real-world performance', link: '/teams', cta: 'Learn More' }
+                { title: 'Training System', desc: 'Interactive scenarios with real-time guidance', link: '/training', cta: 'Enter Training' },
+                { title: 'Field Guides', desc: 'Frameworks, tools, and practical handbooks', link: '/shop', cta: 'Visit Shop' },
+                { title: 'Guided Training', desc: 'Work directly with me', link: '/guided-training', cta: 'Learn More' },
+                { title: 'Team Training', desc: 'Prepare teams for real-world performance', link: '/teams', cta: 'For Teams' }
               ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ y: -8, scale: 1.04 }}
-                  transition={{ type: 'spring', stiffness: 180 }}
-                  className="card-minimal p-6 transition-all duration-300 hover:shadow-xl hover:shadow-secondary/20"
-                >
+                <div key={i} className="card-minimal p-6">
                   <h3 className="text-lg font-semibold mb-2 text-foreground">{item.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{item.desc}</p>
                   <Button asChild className="button-secondary px-5 rounded-full">
                     <Link to={item.link}>{item.cta}</Link>
                   </Button>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
