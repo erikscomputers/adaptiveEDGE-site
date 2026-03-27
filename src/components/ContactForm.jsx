@@ -182,7 +182,7 @@ const onSubmit = async (data) => {
 
       <Button
         type="submit"
-        className="w-full button-primary py-6 text-base"
+        className="w-full button-secondary py-6 text-base"
         disabled={isSubmitting}
       >
         {isSubmitting ? 'Submitting...' : 'Submit'}
