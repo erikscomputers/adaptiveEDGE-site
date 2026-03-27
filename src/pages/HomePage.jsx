@@ -8,6 +8,70 @@ import { Button } from '@/components/ui/button';
 import BackToTop from '@/components/BackToTop.jsx';
 
 const HomePage = () => {
+  const realityPoints = [
+    'Most people are trained for predictable situations, clear instructions, and controlled environments.',
+    'But real life doesn’t work like that.',
+    'Problems show up incomplete.',
+    'Information is missing.',
+    'Pressure is real.',
+    'And hesitation costs you.'
+  ];
+
+  const whatWeDoPoints = [
+    'Build situational awareness in unfamiliar environments',
+    'Make decisions with incomplete information',
+    'Solve problems under pressure',
+    'Stay calm and controlled when things go sideways'
+  ];
+
+  const fieldGuidesPoints = [
+    'Step-by-step problem-solving breakdowns',
+    'Situational awareness checklists',
+    'Decision-making frameworks under pressure',
+    'Real-world scenarios and responses',
+    'Compact, easy-to-use digital formats'
+  ];
+
+  const originPoints = [
+    'AdaptivEdge was built from years in the field as a traveling technician.',
+    'Walking into unfamiliar environments.',
+    'Solving problems under time pressure.',
+    'Managing real consequences.',
+    'No scripts. No hand-holding. No perfect conditions.',
+    'Just problem-solving in real time.',
+    'Over time, that experience turned into a system.'
+  ];
+
+  const frameworkPoints = [
+    '1. Observe — Understand the environment before acting',
+    '2. Orient — Identify risks, variables, and priorities',
+    '3. Decide — Choose a path with the information you have',
+    '4. Act — Execute, adjust, and stay in control'
+  ];
+
+  const whoItIsForPoints = [
+    'Operate in unpredictable environments',
+    'Want to think clearly under pressure',
+    'Are tired of overthinking and second-guessing',
+    'Value practical skills over theory'
+  ];
+
+  const outcomesPoints = [
+    'Faster, clearer decision-making',
+    'Confidence in uncertain situations',
+    'Better control under stress',
+    'Stronger awareness of people and environments',
+    'The ability to solve problems without waiting for help'
+  ];
+
+  const trainingPoints = [
+    'Field-tested breakdowns (real scenarios)',
+    'Tactical thinking frameworks',
+    'Situational awareness training',
+    'Travel and real-world problem-solving insights',
+    'Weekly lessons from life on the road'
+  ];
+
   return (
     <>
       <Helmet>
@@ -41,23 +105,25 @@ const HomePage = () => {
             >
               Real-world problem-solving skills for unpredictable environments — built from life in the field, not theory.
             </motion.p>
-            <p className="text-sm text-muted-foreground mb-10">Lessons forged in high-pressure, real-world situations — where failure has consequences.</p>
+            <p className="text-sm text-muted-foreground mb-10 cursor-default">
+              Lessons forged in high-pressure, real-world situations — where failure has consequences.
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+              <Button className="w-full sm:w-auto button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
                 <Link to="/training">Start Training</Link>
               </Button>
-              <Button asChild size="lg" className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+              <Button className="w-full sm:w-auto button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
                 <Link to="/scenarios">Watch How It Works</Link>
               </Button>
             </div>
           </div>
         </section>
 
-        {/* REALITY CHECK SECTION */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-b border-border/50 relative overflow-hidden">
+        {/* REALITY CHECK */}
+        <section className="py-20 relative overflow-hidden bg-card/40 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -66,30 +132,24 @@ const HomePage = () => {
             >
               Most People Aren’t Prepared for the Real World
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground"
-            >
-              {[
-                'Most people are trained for predictable situations, clear instructions, and controlled environments.',
-                'But real life doesn’t work like that.',
-                'Problems show up incomplete.',
-                'Information is missing.',
-                'Pressure is real.',
-                'And hesitation costs you.'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">{text}</p>
-              ))}
-            </motion.div>
+            {realityPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                {text}
+              </motion.p>
+            ))}
           </div>
         </section>
 
-        {/* WHAT WE DO SECTION */}
-        <section className="section-padding py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
+        {/* WHAT WE DO */}
+        <section className="py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -98,29 +158,25 @@ const HomePage = () => {
             >
               What AdaptivEdge Does
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground"
-            >
-              {[
-                'Build situational awareness in unfamiliar environments',
-                'Make decisions with incomplete information',
-                'Solve problems under pressure',
-                'Stay calm and controlled when things go sideways'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">• {text}</p>
-              ))}
-            </motion.div>
-            <p className="mt-6 text-muted-foreground">This isn’t motivation. This is mental conditioning for real-world performance.</p>
+            {whatWeDoPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                • {text}
+              </motion.p>
+            ))}
+            <p className="text-muted-foreground mt-6">This isn’t motivation. This is mental conditioning for real-world performance.</p>
           </div>
         </section>
 
-        {/* FIELD GUIDES SECTION */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
+        {/* FIELD GUIDES */}
+        <section className="py-20 relative overflow-hidden bg-card/40 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -129,33 +185,28 @@ const HomePage = () => {
             >
               Field Guides — Practical Tools for Real-World Situations
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground mb-6"
-            >
-              {[
-                'Step-by-step problem-solving breakdowns',
-                'Situational awareness checklists',
-                'Decision-making frameworks under pressure',
-                'Real-world scenarios and responses',
-                'Compact, easy-to-use digital formats'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">• {text}</p>
-              ))}
-            </motion.div>
-            <p className="mb-6 text-muted-foreground">No fluff. No theory. Just tools that work when it matters.</p>
-            <Button asChild className="button-secondary px-8 py-4 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+            {fieldGuidesPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                • {text}
+              </motion.p>
+            ))}
+            <p className="text-muted-foreground mb-6">No fluff. No theory. Just tools that work when it matters.</p>
+            <Button className="button-secondary px-8 py-4 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
               <Link to="/field-guides">Browse Field Guides</Link>
             </Button>
           </div>
         </section>
 
-        {/* ORIGIN SECTION */}
-        <section className="section-padding py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
+        {/* ORIGIN */}
+        <section className="py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -164,31 +215,24 @@ const HomePage = () => {
             >
               Built in the Field
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground"
-            >
-              {[
-                'AdaptivEdge was built from years in the field as a traveling technician.',
-                'Walking into unfamiliar environments.',
-                'Solving problems under time pressure.',
-                'Managing real consequences.',
-                'No scripts. No hand-holding. No perfect conditions.',
-                'Just problem-solving in real time.',
-                'Over time, that experience turned into a system.'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">{text}</p>
-              ))}
-            </motion.div>
+            {originPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                {text}
+              </motion.p>
+            ))}
           </div>
         </section>
 
-        {/* FRAMEWORK SECTION */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
+        {/* FRAMEWORK */}
+        <section className="py-20 relative overflow-hidden bg-card/40 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -197,29 +241,25 @@ const HomePage = () => {
             >
               The AdaptivEdge Method
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground"
-            >
-              {[
-                '1. Observe — Understand the environment before acting',
-                '2. Orient — Identify risks, variables, and priorities',
-                '3. Decide — Choose a path with the information you have',
-                '4. Act — Execute, adjust, and stay in control'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">{text}</p>
-              ))}
-            </motion.div>
+            {frameworkPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                {text}
+              </motion.p>
+            ))}
             <p className="mt-6 text-muted-foreground">Most people skip steps. That’s why they panic, hesitate, or make things worse.</p>
           </div>
         </section>
 
-        {/* WHO IT'S FOR SECTION */}
-        <section className="section-padding py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
+        {/* WHO IT'S FOR */}
+        <section className="py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -228,29 +268,25 @@ const HomePage = () => {
             >
               Who This Is For
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground"
-            >
-              {[
-                'Operate in unpredictable environments',
-                'Want to think clearly under pressure',
-                'Are tired of overthinking and second-guessing',
-                'Value practical skills over theory'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">• {text}</p>
-              ))}
-            </motion.div>
+            {whoItIsForPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                • {text}
+              </motion.p>
+            ))}
             <p className="mt-6 text-muted-foreground">Whether in the field, in business, or in life — the ability to adapt is your advantage.</p>
           </div>
         </section>
 
-        {/* OUTCOMES SECTION */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
+        {/* OUTCOMES */}
+        <section className="py-20 relative overflow-hidden bg-card/40 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -259,30 +295,25 @@ const HomePage = () => {
             >
               What You’ll Gain
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground"
-            >
-              {[
-                'Faster, clearer decision-making',
-                'Confidence in uncertain situations',
-                'Better control under stress',
-                'Stronger awareness of people and environments',
-                'The ability to solve problems without waiting for help'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">• {text}</p>
-              ))}
-            </motion.div>
+            {outcomesPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                • {text}
+              </motion.p>
+            ))}
             <p className="mt-6 text-muted-foreground">You don’t eliminate uncertainty. You get better at handling it.</p>
           </div>
         </section>
 
-        {/* CONTENT / TRAINING SECTION */}
-        <section className="section-padding py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
+        {/* TRAINING */}
+        <section className="py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -291,32 +322,27 @@ const HomePage = () => {
             >
               How You Build Your Edge
             </motion.h2>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.7 }}
-              className="space-y-4 text-lg text-muted-foreground mb-6"
-            >
-              {[
-                'Field-tested breakdowns (real scenarios)',
-                'Tactical thinking frameworks',
-                'Situational awareness training',
-                'Travel and real-world problem-solving insights',
-                'Weekly lessons from life on the road'
-              ].map((text, i) => (
-                <p key={i} className="hover:text-foreground transition-colors cursor-default">• {text}</p>
-              ))}
-            </motion.div>
-            <Button asChild className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+            {trainingPoints.map((text, i) => (
+              <motion.p
+                key={i}
+                initial={{ opacity: 0.6 }}
+                whileHover={{ x: 10, opacity: 1 }}
+                transition={{ type: 'spring', stiffness: 180 }}
+                className="text-lg text-muted-foreground cursor-default mb-2 hover:text-foreground"
+              >
+                • {text}
+              </motion.p>
+            ))}
+            <Button className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20 mt-6">
               <Link to="/training">Start Building Your Edge</Link>
             </Button>
           </div>
         </section>
 
-        {/* PHILOSOPHY SECTION */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
+        {/* PHILOSOPHY */}
+        <section className="py-20 relative overflow-hidden bg-card/40 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -325,7 +351,7 @@ const HomePage = () => {
             >
               The Difference
             </motion.h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground cursor-default">
               This isn’t about becoming perfect.<br />
               It’s about becoming capable.<br />
               Capable of walking into the unknown…<br />
@@ -334,10 +360,10 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* FINAL CTA SECTION */}
-        <section className="section-padding py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
+        {/* FINAL CTA */}
+        <section className="py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
           <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent pointer-events-none" />
-          <div className="container-custom relative z-10 text-center max-w-3xl mx-auto">
+          <div className="container-custom max-w-3xl mx-auto relative z-10 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -346,18 +372,18 @@ const HomePage = () => {
             >
               When There’s No Clear Answer…
             </motion.h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-8 cursor-default">
               How you think is everything.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+              <Button className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
                 <Link to="/training">Start Training</Link>
               </Button>
-              <Button asChild className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+              <Button className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
                 <Link to="/field-guides">Browse Field Guides</Link>
               </Button>
-              <Button asChild className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
-                <Link to="/subscribe">Subscribe for Field Lessons</Link>
+              <Button className="button-secondary px-8 py-6 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+                <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
           </div>
@@ -371,4 +397,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-``
