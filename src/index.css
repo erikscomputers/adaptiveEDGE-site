@@ -97,10 +97,18 @@
   }
 
 .button-secondary {
-  @apply bg-secondary text-secondary-foreground;
+  @apply bg-secondary text-secondary-foreground 
+         transition-all duration-300 ease-out;
 }
 
 .button-secondary:hover {
   background-color: hsl(var(--accent));
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px hsl(var(--secondary) / 0.25);
+}
+
+.button-secondary:active {
+  transform: scale(0.98);
+  box-shadow: 0 6px 15px hsl(var(--secondary) / 0.15);
 }
 }

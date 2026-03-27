@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Shield, Zap } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Button } from '@/components/ui/button';
@@ -45,16 +44,13 @@ const HomePage = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                {[{ to: "/training", label: "Enter Training" }, { to: "/scenarios", label: "Try a Scenario" }].map((btn, i) => (
-                  <Button
-                    key={i}
-                    asChild
-                    size="lg"
-                    className="button-secondary px-8 py-6 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                  >
-                    <Link to={btn.to}>{btn.label}</Link>
-                  </Button>
-                ))}
+                <Button asChild size="lg" className="button-secondary px-8 py-6">
+                  <Link to="/training">Enter Training</Link>
+                </Button>
+
+                <Button asChild size="lg" className="button-secondary px-8 py-6">
+                  <Link to="/scenarios">Try a Scenario</Link>
+                </Button>
               </div>
             </motion.div>
           </div>
@@ -169,7 +165,7 @@ const HomePage = () => {
                 ))}
               </div>
 
-              <Button className="button-secondary px-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20">
+              <Button className="button-secondary px-6 rounded-full">
                 Submit
               </Button>
             </motion.div>
@@ -224,7 +220,7 @@ const HomePage = () => {
                 >
                   <h3 className="text-lg font-semibold mb-2 text-foreground">{item.title}</h3>
                   <p className="text-sm text-muted-foreground mb-4">{item.desc}</p>
-                  <Button asChild className="button-secondary px-5 rounded-full transition-all duration-300 hover:scale-105">
+                  <Button asChild className="button-secondary px-5 rounded-full">
                     <Link to={item.link}>{item.cta}</Link>
                   </Button>
                 </motion.div>
@@ -241,15 +237,13 @@ const HomePage = () => {
             <h2 className="text-3xl font-bold mb-6 text-foreground">Get better at handling reality.</h2>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {[{ to: "/training", label: "Start Training" }, { to: "/scenarios", label: "Try a Scenario" }].map((btn, i) => (
-                <Button
-                  key={i}
-                  asChild
-                  className="button-secondary px-8 py-6 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                >
-                  <Link to={btn.to}>{btn.label}</Link>
-                </Button>
-              ))}
+              <Button asChild className="button-secondary px-8 py-6 rounded-full">
+                <Link to="/training">Start Training</Link>
+              </Button>
+
+              <Button asChild className="button-secondary px-8 py-6 rounded-full">
+                <Link to="/scenarios">Try a Scenario</Link>
+              </Button>
             </div>
           </div>
         </section>
