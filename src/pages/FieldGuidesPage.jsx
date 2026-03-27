@@ -22,7 +22,7 @@ const ShopPage = () => {
         <title>Field Guides</title>
         <meta
           name="description"
-          content="Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level."
+          content="Practical field guides, handbooks, and manuals designed to help you build clarity, move with intent, and perform at a higher level."
         />
       </Helmet>
 
@@ -42,7 +42,7 @@ const ShopPage = () => {
                 Field <span className="text-secondary">Guides</span>
               </h1>
               <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-                Practical frameworks, guides, courses, workshops, merch, and toolkits designed to help you build clarity, move with intent, and perform at a higher level.
+                Practical field guides, handbooks, and manuals designed to help you build clarity, move with intent, and perform at a higher level.
               </p>
             </motion.div>
           </div>
