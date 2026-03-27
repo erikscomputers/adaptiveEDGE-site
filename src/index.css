@@ -96,7 +96,11 @@
     @apply bg-accent text-accent-foreground hover:bg-accent/90 transition-colors duration-200 rounded-lg font-medium active:scale-[0.98];
   }
 
-  .button-secondary {
-    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 transition-colors duration-200 rounded-lg font-medium active:scale-[0.98];
-  }
+.button-secondary {
+  @apply bg-secondary text-secondary-foreground;
+}
+
+.button-secondary:hover {
+  background-color: hsl(var(--accent));
+}
 }
