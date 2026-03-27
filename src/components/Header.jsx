@@ -9,8 +9,6 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'Training', path: '/training' },
-    { name: 'Scenarios', path: '/scenarios' },
     { name: 'Field Guides', path: '/field-guides' },
     { name: 'Guided Training', path: '/guided-training' },
     { name: 'Teams', path: '/teams' },
