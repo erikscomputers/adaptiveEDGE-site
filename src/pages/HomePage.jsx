@@ -8,334 +8,272 @@ import { Button } from '@/components/ui/button';
 import BackToTop from '@/components/BackToTop.jsx';
 
 const HomePage = () => {
-  const navigate = useNavigate();
-
-  const realityPoints = [
-    'Most people are trained for predictable situations, clear instructions, and controlled environments.',
-    'But real life doesn’t work like that.',
-    'Problems show up incomplete.',
-    'Information is missing.',
-    'Pressure is real.',
-    'And hesitation costs you.'
-  ];
-
-  const whatWeDoPoints = [
-    'Build situational awareness in unfamiliar environments',
-    'Make decisions with incomplete information',
-    'Solve problems under pressure',
-    'Stay calm and controlled when things go sideways'
-  ];
-
-  const fieldGuidesPoints = [
-    'Step-by-step problem-solving breakdowns',
-    'Situational awareness checklists',
-    'Decision-making frameworks under pressure',
-    'Real-world scenarios and responses',
-    'Compact, easy-to-use digital formats'
-  ];
-
-  const originPoints = [
-    'AdaptivEdge was built from years in the field as a traveling technician.',
-    'Walking into unfamiliar environments.',
-    'Solving problems under time pressure.',
-    'Managing real consequences.',
-    'No scripts. No hand-holding. No perfect conditions.',
-    'Just problem-solving in real time.',
-    'Over time, that experience turned into a system.'
-  ];
-
-  const frameworkPoints = [
-    'Observe — Understand the environment before acting',
-    'Orient — Identify risks, variables, and priorities',
-    'Decide — Choose a path with the information you have',
-    'Act — Execute, adjust, and stay in control'
-  ];
-
-  const outcomesPoints = [
-    'Faster, clearer decision-making',
-    'Confidence in uncertain situations',
-    'Better control under stress',
-    'Stronger awareness of people and environments',
-    'The ability to solve problems without waiting for help'
-  ];
-
-  const trainingPoints = [
-    'Field-tested breakdowns (real scenarios)',
-    'Tactical thinking frameworks',
-    'Situational awareness training',
-    'Travel and real-world problem-solving insights',
-    'Weekly lessons from life on the road'
+  const methodSteps = [
+    { number: '01', title: 'Observe', description: 'Understand what’s happening before you act. Notice patterns, changes, and what doesn’t fit.' },
+    { number: '02', title: 'Orient', description: 'Break the situation down. Identify risks, variables, and what matters most.' },
+    { number: '03', title: 'Decide', description: 'Choose a direction with the information you have. Don’t wait for perfect clarity.' },
+    { number: '04', title: 'Act', description: 'Execute. Adjust. Stay in motion.' }
   ];
 
   return (
     <>
       <Helmet>
-        <title>AdaptivEdge - Adapt. Strategize. Prevail.</title>
+        <title>AdaptivEdge - Adapt Faster. Think Clear. Act Decisively.</title>
+        <meta
+          name="description"
+          content="Real-world problem-solving skills for unpredictable environments. Build decision-making, awareness, and adaptability under pressure."
+        />
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-transparent">
         <Header />
 
         {/* HERO */}
-        <section className="section-padding py-20 relative overflow-hidden bg-card/20 backdrop-blur-sm border-b border-border/50">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
+        <section className="relative min-h-[85dvh] flex items-center justify-center text-center border-b border-border/50">
+          <div className="container-custom">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+              Adapt Faster.<br />
+              Think Clear.<br />
+              <span className="text-accent">Act Decisively Under Pressure.</span>
+            </h1>
 
-          <div className="container-custom text-center relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9 }}
-              className="max-w-3xl mx-auto"
-            >
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-foreground">
-                Adapt Faster. Think Clear. Perform Under Pressure.
-              </h1>
+            <p className="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-muted-foreground">
+              Real-world problem-solving skills for unpredictable environments — built from experience, not theory.
+            </p>
 
-              <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
-                Real-world problem-solving skills for unpredictable environments — built from life in the field, not theory.
-              </p>
+            <p className="text-sm text-muted-foreground mb-10">
+              Lessons forged in high-pressure, real-world situations — where decisions had consequences.
+            </p>
 
-              <div className="flex flex-col sm:flex-row gap-5 justify-center">
-                <div className="w-full sm:w-auto">
-                  <Button
-                    className="w-full button-secondary hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                    onClick={() => navigate('/training')}
-                  >
-                    Start Training
-                  </Button>
-                </div>
-
-                <div className="w-full sm:w-auto">
-                  <Button
-                    className="w-full button-secondary hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                    onClick={() => navigate('/scenarios')}
-                  >
-                    Watch How It Works
-                  </Button>
-                </div>
-              </div>
-            </motion.div>
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Button asChild size="lg" className="button-primary">
+                <Link to="/training">Start Training</Link>
+              </Button>
+              <Button asChild size="lg" variant="outline">
+                <Link to="/method">How It Works</Link>
+              </Button>
+            </div>
           </div>
         </section>
 
-        {/* REALITY */}
-        <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom relative z-10">
-            <motion.h2
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground"
-            >
+        {/* REALITY CHECK */}
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Most People Aren’t Prepared for the Real World
-            </motion.h2>
+            </h2>
 
-            <div className="max-w-3xl mx-auto space-y-6 text-lg text-muted-foreground border-l border-border/50 pl-6">
-              {realityPoints.map((text, i) => (
-                <motion.p
-                  key={i}
-                  initial={{ opacity: 0.6 }}
-                  whileHover={{ x: 10, opacity: 1 }}
-                  className="hover:text-foreground transition-colors duration-300"
-                >
-                  {text}
-                </motion.p>
-              ))}
-            </div>
+            <p className="text-lg text-muted-foreground leading-relaxed space-y-4">
+              Most people are trained for predictable situations, clear instructions, and controlled environments.
+              <br /><br />
+              But real life doesn’t work like that.
+              <br /><br />
+              Problems show up incomplete. Information is missing. Situations change fast. And pressure is real.
+              <br /><br />
+              Hesitation costs you. Overthinking slows you down.
+              <br /><br />
+              The people who perform under pressure don’t wait for clarity. They move, adjust, and stay in control.
+            </p>
           </div>
         </section>
 
         {/* WHAT WE DO */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-10 text-foreground">
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               What AdaptivEdge Does
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {whatWeDoPoints.map((text, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="p-6 rounded-xl bg-card/50 border border-border/50 hover:-translate-y-2 hover:shadow-lg hover:shadow-secondary/20 transition-all"
-                >
-                  {text}
-                </motion.div>
-              ))}
-            </div>
+            <p className="text-lg text-muted-foreground mb-6">
+              AdaptivEdge trains you to think and act in real time — so you can handle situations without freezing, second-guessing, or waiting for perfect information.
+            </p>
+
+            <ul className="space-y-3 text-muted-foreground">
+              <li>• Build situational awareness in unfamiliar environments</li>
+              <li>• Break down complex situations quickly</li>
+              <li>• Make decisions with incomplete information</li>
+              <li>• Take action and adjust as things change</li>
+            </ul>
+
+            <p className="mt-6 font-medium">
+              This isn’t motivation. This is mental conditioning for real-world performance.
+            </p>
           </div>
         </section>
 
         {/* FIELD GUIDES */}
-        <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-6 text-foreground">
-              Field Guides
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Field Guides — Practical Tools for Real-World Situations
             </h2>
 
-            <p className="text-muted-foreground mb-10">
+            <p className="text-lg text-muted-foreground mb-6">
+              When you don’t have time to figure things out from scratch, you need something you can rely on.
+              The AdaptivEdge Field Guides are built from real-world experience — designed to help you assess situations, make decisions, and act without hesitation.
+            </p>
+
+            <ul className="space-y-3 text-muted-foreground">
+              <li>• Step-by-step problem-solving breakdowns</li>
+              <li>• Situational awareness checklists</li>
+              <li>• Decision-making frameworks under pressure</li>
+              <li>• Real-world scenarios and responses</li>
+              <li>• Compact, easy-to-use digital formats</li>
+            </ul>
+
+            <p className="mt-6 mb-6 font-medium">
               No fluff. No theory. Just tools that work when it matters.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {fieldGuidesPoints.map((text, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ y: -6 }}
-                  className="p-6 rounded-xl bg-card/50 border border-border/50 hover:shadow-lg hover:shadow-secondary/20 transition-all"
-                >
-                  {text}
-                </motion.div>
-              ))}
-            </div>
-
-            <div className="mt-10">
-              <Button
-                className="button-secondary hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                onClick={() => navigate('/field-guides')}
-              >
-                Browse Field Guides
-              </Button>
-            </div>
+            <Button asChild>
+              <Link to="/field-guides">Browse Field Guides</Link>
+            </Button>
           </div>
         </section>
 
         {/* ORIGIN */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom relative z-10">
-            <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Built in the Field
             </h2>
 
-            <div className="max-w-3xl mx-auto space-y-6 text-lg text-muted-foreground border-l border-border/50 pl-6">
-              {originPoints.map((text, i) => (
-                <motion.p
-                  key={i}
-                  whileHover={{ x: 10 }}
-                  className="hover:text-foreground transition-colors"
-                >
-                  {text}
-                </motion.p>
-              ))}
-            </div>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              AdaptivEdge was built from years in the field as a traveling technician.
+              <br /><br />
+              Walking into unfamiliar environments. Solving problems under time pressure. Managing real consequences.
+              <br /><br />
+              No scripts. No hand-holding. No perfect conditions.
+              <br /><br />
+              Just learning how to read situations, make decisions, and act — over and over again.
+              <br /><br />
+              Over time, that repetition became a system.
+            </p>
           </div>
         </section>
 
-        {/* FRAMEWORK */}
-        <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-10 text-foreground">
+        {/* METHOD */}
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
               The AdaptivEdge Method
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {frameworkPoints.map((text, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ y: -6 }}
-                  className="p-6 rounded-xl bg-card/50 border border-border/50 hover:shadow-lg hover:shadow-secondary/20 transition-all"
-                >
-                  {text}
-                </motion.div>
+            <div className="grid md:grid-cols-4 gap-6">
+              {methodSteps.map((step, index) => (
+                <div key={index} className="card-minimal p-6 text-center">
+                  <div className="mb-4 text-accent font-bold">{step.number}</div>
+                  <h3 className="font-semibold mb-2">{step.title}</h3>
+                  <p className="text-sm text-muted-foreground">{step.description}</p>
+                </div>
               ))}
             </div>
+
+            <p className="text-center mt-10 text-muted-foreground max-w-xl mx-auto">
+              Most people hesitate somewhere in this process. That hesitation is where things start to break down.
+            </p>
+          </div>
+        </section>
+
+        {/* WHO IT'S FOR */}
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Who This Is For
+            </h2>
+
+            <ul className="space-y-3 text-muted-foreground">
+              <li>• Operate in unpredictable environments</li>
+              <li>• Want to think clearly under pressure</li>
+              <li>• Are tired of overthinking and second-guessing</li>
+              <li>• Value practical skills over theory</li>
+            </ul>
+
+            <p className="mt-6">
+              Whether in the field, in business, or in life — your ability to adapt is your advantage.
+            </p>
           </div>
         </section>
 
         {/* OUTCOMES */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-10 text-foreground">
+        <section className="section-padding border-b border-border/50">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               What You’ll Gain
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {outcomesPoints.map((text, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ y: -6 }}
-                  className="p-6 rounded-xl bg-card/50 border border-border/50 hover:shadow-lg hover:shadow-secondary/20 transition-all"
-                >
-                  {text}
-                </motion.div>
-              ))}
-            </div>
+            <ul className="space-y-3 text-muted-foreground">
+              <li>• Faster, clearer decision-making</li>
+              <li>• Confidence in uncertain situations</li>
+              <li>• Better control under stress</li>
+              <li>• Stronger awareness of people and environments</li>
+              <li>• The ability to solve problems without waiting for help</li>
+            </ul>
+
+            <p className="mt-6">
+              You don’t eliminate uncertainty. You get better at handling it.
+            </p>
           </div>
         </section>
 
         {/* TRAINING */}
-        <section className="section-padding py-20 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-10 text-foreground">
+        <section className="section-padding border-b border-border/50 text-center">
+          <div className="container-custom max-w-3xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               How You Build Your Edge
             </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {trainingPoints.map((text, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ y: -6 }}
-                  className="p-6 rounded-xl bg-card/50 border border-border/50 hover:shadow-lg hover:shadow-secondary/20 transition-all"
-                >
-                  {text}
-                </motion.div>
-              ))}
-            </div>
+            <ul className="space-y-3 text-muted-foreground mb-8">
+              <li>• Field-tested breakdowns from real scenarios</li>
+              <li>• Practical thinking frameworks</li>
+              <li>• Situational awareness training</li>
+              <li>• Real-world problem-solving insights</li>
+              <li>• Weekly lessons from life on the road</li>
+            </ul>
 
-            <div className="mt-10">
-              <Button
-                className="button-secondary hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                onClick={() => navigate('/training')}
-              >
-                Start Building Your Edge
-              </Button>
-            </div>
+            <Button asChild size="lg" className="button-primary">
+              <Link to="/training">Start Building Your Edge</Link>
+            </Button>
+          </div>
+        </section>
+
+        {/* PHILOSOPHY */}
+        <section className="section-padding border-b border-border/50 text-center">
+          <div className="container-custom max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              The Difference
+            </h2>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              This isn’t about becoming perfect.
+              <br /><br />
+              It’s about becoming capable.
+              <br /><br />
+              Capable of walking into the unknown… reading the situation… making a decision… and figuring it out in real time.
+            </p>
           </div>
         </section>
 
         {/* FINAL CTA */}
-        <section className="section-padding py-20 bg-card/40 backdrop-blur-sm border-y border-border/50 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5 bg-gradient-to-br from-secondary to-transparent" />
-
-          <div className="container-custom text-center relative z-10">
-            <h2 className="text-3xl font-bold mb-6 text-foreground">
+        <section className="section-padding text-center">
+          <div className="container-custom max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               When There’s No Clear Answer…
             </h2>
 
-            <p className="text-muted-foreground mb-10">
-              How you think is everything.
+            <p className="text-lg text-muted-foreground mb-8">
+              You don’t need perfect information. You need a way to think. A way to decide. A way to act. And the ability to adjust when things change.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <Button
-                className="button-secondary hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                onClick={() => navigate('/training')}
-              >
-                Start Training
+            <div className="flex gap-4 justify-center flex-wrap">
+              <Button asChild size="lg" className="button-primary">
+                <Link to="/training">Start Training</Link>
               </Button>
-
-              <Button
-                className="button-secondary hover:scale-105 hover:shadow-lg hover:shadow-secondary/20"
-                onClick={() => navigate('/field-guides')}
-              >
-                Browse Field Guides
+              <Button asChild size="lg" variant="outline">
+                <Link to="/contact">Request In-Person Training</Link>
+              </Button>
+              <Button asChild size="lg" variant="ghost">
+                <Link to="/method">Learn About The Method</Link>
               </Button>
             </div>
           </div>
